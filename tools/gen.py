@@ -44,6 +44,32 @@ def build_item(it, sec_slug):
             continue
         opts.append({"id": slug(o), "label": o, "kind": "choice"})
 
+    # Where an item has several unlabelled free-text boxes, the App View bullets
+    # name them ("age", "gender", "time known"). Use those rather than
+    # "Custom… (2)" when the counts line up.
+    generic = [o for o in opts if o["id"] == "custom"]
+    notes = [re.sub(r"^[•\-]\s*", "", n).split(":")[0].strip()
+             for n in it.get("notes", [])]
+    notes = [n for n in notes if n and not re.match(r"^\*", n)]
+    if len(generic) > 1 and len(notes) == len(generic):
+        for o, name in zip(generic, notes):
+            o["id"] = slug(name)
+            o["label"] = name[0].upper() + name[1:]
+            o["prompt"] = name
+
+    # Option ids must be unique within an item: the manual gives several items
+    # more than one free-text box, and each would otherwise land on "custom".
+    seen = {}
+    for o in opts:
+        base = o["id"]
+        if base in seen:
+            seen[base] += 1
+            o["id"] = f"{base}-{seen[base]}"
+            if o["label"] == "Custom…":
+                o["label"] = f"Custom… ({seen[base] + 1})"
+        else:
+            seen[base] = 0
+
     # Some items are really a single typed value rather than a choice list.
     inp = None
     if len(opts) == 1 and opts[0]["label"].lower() in ("any number", "insert number"):

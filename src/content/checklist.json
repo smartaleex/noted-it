@@ -1080,8 +1080,8 @@
          "kind": "choice"
         },
         {
-         "id": "custom",
-         "label": "Custom\u2026",
+         "id": "custom-1",
+         "label": "Custom\u2026 (2)",
          "kind": "text"
         }
        ],
@@ -1272,19 +1272,22 @@
        "multi": false,
        "options": [
         {
-         "id": "custom",
-         "label": "Custom\u2026",
-         "kind": "text"
+         "id": "age",
+         "label": "Age",
+         "kind": "text",
+         "prompt": "age"
         },
         {
-         "id": "custom",
-         "label": "Custom\u2026",
-         "kind": "text"
+         "id": "gender",
+         "label": "Gender",
+         "kind": "text",
+         "prompt": "gender"
         },
         {
-         "id": "custom",
-         "label": "Custom\u2026",
-         "kind": "text"
+         "id": "time-known",
+         "label": "Time known",
+         "kind": "text",
+         "prompt": "time known"
         }
        ],
        "variants": [
@@ -2843,8 +2846,8 @@
          "kind": "choice"
         },
         {
-         "id": "custom",
-         "label": "Custom\u2026",
+         "id": "custom-1",
+         "label": "Custom\u2026 (2)",
          "kind": "text"
         }
        ],
@@ -3050,7 +3053,7 @@
          "kind": "choice"
         },
         {
-         "id": "distress-tolerance",
+         "id": "distress-tolerance-1",
          "label": "distress tolerance",
          "kind": "choice"
         },
@@ -4240,8 +4243,8 @@
          "kind": "choice"
         },
         {
-         "id": "custom",
-         "label": "Custom\u2026",
+         "id": "custom-1",
+         "label": "Custom\u2026 (2)",
          "kind": "text"
         }
        ],
@@ -5456,8 +5459,8 @@
          "kind": "choice"
         },
         {
-         "id": "custom",
-         "label": "Custom\u2026",
+         "id": "custom-1",
+         "label": "Custom\u2026 (2)",
          "kind": "text"
         }
        ],
