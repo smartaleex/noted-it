@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-white rounded;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-3.5 py-2
+           text-sm font-medium transition-colors disabled:opacity-40
+           disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-white hover:bg-[#2449b4];
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-white text-ink-2 hover:bg-paper;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5
+           text-sm transition-colors cursor-pointer select-none;
+  }
+  .chip-off {
+    @apply chip border-line bg-white text-ink-2 hover:border-accent-mid hover:bg-accent-soft;
+  }
+  .chip-on {
+    @apply chip border-accent bg-accent text-white;
+  }
+  .field {
+    @apply w-full rounded-lg border border-line bg-white px-3 py-2 text-sm
+           placeholder:text-ink-3 focus:border-accent;
+  }
+  .card {
+    @apply rounded-xl border border-line bg-white shadow-card;
+  }
+  .label {
+    @apply text-[13px] font-semibold text-ink;
+  }
+}
+
+/* The live preview deliberately fades older lines out — see README, "5-row rule". */
+.preview-fade {
+  mask-image: linear-gradient(to bottom, transparent 0, #000 2.5rem);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 2.5rem);
+}

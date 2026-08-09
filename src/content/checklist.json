@@ -1,0 +1,5867 @@
+{
+ "documents": [
+  {
+   "id": "initial-clinical-note",
+   "title": "Initial Clinical Note",
+   "sections": [
+    {
+     "id": "clinical-note",
+     "title": "Clinical Note",
+     "items": [
+      {
+       "id": "session-number",
+       "label": "Session Number",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Session Number: X"
+       ],
+       "raw": "Session Number: X",
+       "input": "number"
+      },
+      {
+       "id": "date",
+       "label": "Date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Date: DD/MM/YYYY"
+       ],
+       "raw": "Date: DD/MM/YYYY",
+       "input": "date"
+      },
+      {
+       "id": "attendees",
+       "label": "Attendees",
+       "multi": false,
+       "options": [
+        {
+         "id": "author-and-client",
+         "label": "Author and client",
+         "kind": "choice"
+        },
+        {
+         "id": "author-client-and-client-s-guardian",
+         "label": "Author, client, and client's guardian",
+         "kind": "choice"
+        },
+        {
+         "id": "author-client-and-client-s-partner",
+         "label": "Author, client, and client's partner",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Attendees: X"
+       ],
+       "raw": "Attendees: X"
+      },
+      {
+       "id": "mode",
+       "label": "Mode",
+       "multi": false,
+       "options": [
+        {
+         "id": "face-to-face",
+         "label": "Face-to-face",
+         "kind": "choice"
+        },
+        {
+         "id": "telehealth-video",
+         "label": "Telehealth (video)",
+         "kind": "choice"
+        },
+        {
+         "id": "telehealth-phone",
+         "label": "Telehealth (phone)",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Mode: X"
+       ],
+       "raw": "Mode: X"
+      },
+      {
+       "id": "referrer-name",
+       "label": "Referrer name",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Referrer: free text"
+       ],
+       "raw": "Referrer: free text"
+      },
+      {
+       "id": "referrer-role",
+       "label": "Referrer role",
+       "multi": true,
+       "options": [
+        {
+         "id": "general-practitioner",
+         "label": "General Practitioner",
+         "kind": "choice"
+        },
+        {
+         "id": "psychiatrist",
+         "label": "Psychiatrist",
+         "kind": "choice"
+        },
+        {
+         "id": "general-psychologist",
+         "label": "General Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "clinical-psychologist",
+         "label": "Clinical Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "clinical-neuropsychologist",
+         "label": "Clinical Neuropsychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "self-referred",
+         "label": "Self-Referred",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Referrer role: X"
+       ],
+       "raw": "Referrer role: X"
+      },
+      {
+       "id": "referral-reason",
+       "label": "Referral reason",
+       "multi": true,
+       "options": [
+        {
+         "id": "low-mood",
+         "label": "low mood",
+         "kind": "choice"
+        },
+        {
+         "id": "anxiety-presentation",
+         "label": "anxiety presentation",
+         "kind": "choice"
+        },
+        {
+         "id": "adjustment-concerns",
+         "label": "adjustment concerns",
+         "kind": "choice"
+        },
+        {
+         "id": "stress",
+         "label": "stress",
+         "kind": "choice"
+        },
+        {
+         "id": "workplace-stress",
+         "label": "workplace stress",
+         "kind": "choice"
+        },
+        {
+         "id": "ocd-presentation",
+         "label": "OCD presentation",
+         "kind": "choice"
+        },
+        {
+         "id": "drug-or-alcohol-use",
+         "label": "drug or alcohol use",
+         "kind": "choice"
+        },
+        {
+         "id": "experiences-of-psychosis",
+         "label": "experiences of psychosis",
+         "kind": "choice"
+        },
+        {
+         "id": "relational-difficulties",
+         "label": "relational difficulties",
+         "kind": "choice"
+        },
+        {
+         "id": "sleeping-difficulties",
+         "label": "sleeping difficulties",
+         "kind": "choice"
+        },
+        {
+         "id": "phobia",
+         "label": "phobia",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Referral reason: X"
+       ],
+       "raw": "Referral reason: X"
+      },
+      {
+       "id": "session-length",
+       "label": "Session Length",
+       "multi": false,
+       "options": [
+        {
+         "id": "50",
+         "label": "50",
+         "kind": "choice"
+        },
+        {
+         "id": "90",
+         "label": "90",
+         "kind": "choice"
+        },
+        {
+         "id": "180",
+         "label": "180",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Session Length: Approximately X minutes"
+       ],
+       "raw": "Session Length: Approximately X minutes"
+      },
+      {
+       "id": "interpreter",
+       "label": "Interpreter",
+       "multi": false,
+       "options": [
+        {
+         "id": "no",
+         "label": "No",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        },
+        {
+         "id": "please-insert-language",
+         "label": "Please insert language",
+         "prompt": "Please insert language",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "No interpreters were preset for this session.",
+        "An interpreter (free text box) was present for this session."
+       ],
+       "raw": "No interpreters were preset for this session. -OR- An interpreter (free text box) was present for this session."
+      },
+      {
+       "id": "medicolegal",
+       "label": "Medicolegal",
+       "multi": false,
+       "options": [
+        {
+         "id": "no",
+         "label": "No",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        },
+        {
+         "id": "please-insert-further-details-if-necessary",
+         "label": "Please insert further details if necessary",
+         "prompt": "Please insert further details if necessary",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client denied the appointment was subjected to any legal or family court proceedings.",
+        "Client indicated the appointment was subjected to any legal or family court proceedings. free text box)."
+       ],
+       "raw": "Client denied the appointment was subjected to any legal or family court proceedings. -OR- Client indicated the appointment was subjected to any legal or family court proceedings. free text box)."
+      },
+      {
+       "id": "current-dsm-v-tr-diagnosis",
+       "label": "Current DSM-V-TR diagnosis",
+       "multi": false,
+       "options": [
+        {
+         "id": "see-separate-dsm-v-tr-document-for-details",
+         "label": "See separate DSM-V-TR document for details",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Current DSM-V-TR diagnosis: X"
+       ],
+       "raw": "Current DSM-V-TR diagnosis: X"
+      },
+      {
+       "id": "additional-data",
+       "label": "Additional Data",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "psychometric-assessment",
+     "title": "Psychometric Assessment",
+     "items": []
+    },
+    {
+     "id": "mental-status-exam",
+     "title": "Mental Status Exam",
+     "items": [
+      {
+       "id": "arrival-time",
+       "label": "Arrival time",
+       "multi": false,
+       "options": [
+        {
+         "id": "on-time",
+         "label": "on time",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-5-minutes-late",
+         "label": "approximately 5 minutes late",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-10-minutes-late",
+         "label": "approximately 10 minutes late",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-15-minutes-late",
+         "label": "approximately 15 minutes late",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-free-text-box-minutes-late",
+         "label": "approximately Free text box minutes late",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client arrived X to session"
+       ],
+       "raw": "Client arrived X to session"
+      },
+      {
+       "id": "grooming",
+       "label": "Grooming",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "inappropriate",
+         "label": "inappropriate",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client was X groomed and dressed to the session."
+       ],
+       "raw": "Client was X groomed and dressed to the session."
+      },
+      {
+       "id": "perceptual-disturbances",
+       "label": "Perceptual Disturbances",
+       "multi": false,
+       "options": [
+        {
+         "id": "oriented-to-p-t-p",
+         "label": "oriented to P,T,P",
+         "kind": "choice"
+        },
+        {
+         "id": "not-oriented-to-p-t-p",
+         "label": "not oriented to P,T,P",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client appeared oriented to person, time, and place, without indication of perceptual disturbances.",
+        "Client did not appear oriented to person, time, and place, suggesting a possible indication of perceptual disturbances."
+       ],
+       "raw": "Client appeared oriented to person, time, and place, without indication of perceptual disturbances. -OR- Client did not appear oriented to person, time, and place, suggesting a possible indication of perceptual disturbances."
+      },
+      {
+       "id": "eye-contact",
+       "label": "Eye Contact",
+       "multi": false,
+       "options": [
+        {
+         "id": "normal",
+         "label": "normal",
+         "kind": "choice"
+        },
+        {
+         "id": "avoidant",
+         "label": "avoidant",
+         "kind": "choice"
+        },
+        {
+         "id": "intense",
+         "label": "intense",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client's eye contact appeared X."
+       ],
+       "raw": "Client's eye contact appeared X."
+      },
+      {
+       "id": "movement-pace",
+       "label": "Movement Pace",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "slow",
+         "label": "slow",
+         "kind": "choice"
+        },
+        {
+         "id": "accelerated",
+         "label": "accelerated",
+         "kind": "choice"
+        },
+        {
+         "id": "peculiar",
+         "label": "peculiar",
+         "kind": "choice"
+        },
+        {
+         "id": "agitated-and-peculiar",
+         "label": "agitated and peculiar",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client moved at a X pace.",
+        "Client appeared agitated and moved at a peculiar pace."
+       ],
+       "raw": "Client moved at a X pace. -OR- Client appeared agitated and moved at a peculiar pace."
+      },
+      {
+       "id": "mood",
+       "label": "Mood",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "stable",
+         "label": "stable",
+         "kind": "choice"
+        },
+        {
+         "id": "depressed",
+         "label": "depressed",
+         "kind": "choice"
+        },
+        {
+         "id": "anxious",
+         "label": "anxious",
+         "kind": "choice"
+        },
+        {
+         "id": "euthymic",
+         "label": "euthymic",
+         "kind": "choice"
+        },
+        {
+         "id": "angry",
+         "label": "angry",
+         "kind": "choice"
+        },
+        {
+         "id": "euphoric",
+         "label": "euphoric",
+         "kind": "choice"
+        },
+        {
+         "id": "irritable",
+         "label": "irritable",
+         "kind": "choice"
+        },
+        {
+         "id": "silly",
+         "label": "silly",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client's mood appeared X.",
+        "Client's mood was appropriate to the session content."
+       ],
+       "raw": "Client's mood appeared X. -OR- Client's mood was appropriate to the session content."
+      },
+      {
+       "id": "affect",
+       "label": "Affect",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "flat",
+         "label": "flat",
+         "kind": "choice"
+        },
+        {
+         "id": "labile",
+         "label": "labile",
+         "kind": "choice"
+        },
+        {
+         "id": "constricted",
+         "label": "constricted",
+         "kind": "choice"
+        },
+        {
+         "id": "full",
+         "label": "full",
+         "kind": "choice"
+        },
+        {
+         "id": "inappropriate",
+         "label": "inappropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client's affect appeared X."
+       ],
+       "raw": "Client's affect appeared X."
+      },
+      {
+       "id": "engagement",
+       "label": "Engagement",
+       "multi": false,
+       "options": [
+        {
+         "id": "engaged",
+         "label": "engaged",
+         "kind": "choice"
+        },
+        {
+         "id": "disengaged",
+         "label": "disengaged",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client appeared X in session."
+       ],
+       "raw": "Client appeared X in session."
+      },
+      {
+       "id": "insight",
+       "label": "Insight",
+       "multi": false,
+       "options": [
+        {
+         "id": "fair",
+         "label": "Fair",
+         "kind": "choice"
+        },
+        {
+         "id": "limited",
+         "label": "limited",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client appeared to show X insight into their presentation and needs."
+       ],
+       "raw": "Client appeared to show X insight into their presentation and needs."
+      },
+      {
+       "id": "speech",
+       "label": "Speech",
+       "multi": false,
+       "options": [
+        {
+         "id": "clear-and-understandable",
+         "label": "clear and understandable",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client spoke clearly and was understandable",
+        "Prefix and suffix: Client spoke X,",
+        "Client was tangential veering from topics discussed,",
+        "Client's speech was pressured,",
+        "Client's speech was limited, AND but was understandable.",
+        "but was not understandable."
+       ],
+       "raw": "Client spoke clearly and was understandable -OR- Prefix and suffix: Client spoke X, -OR- Client was tangential veering from topics discussed, -OR- Client's speech was pressured, -OR- Client's speech was limited, AND but was understandable. -OR- but was not understandable.",
+       "groups": [
+        {
+         "id": "prefix",
+         "label": "Prefix",
+         "options": [
+          {
+           "id": "loudly",
+           "label": "loudly",
+           "kind": "choice"
+          },
+          {
+           "id": "softly",
+           "label": "softly",
+           "kind": "choice"
+          },
+          {
+           "id": "at-a-slow-pace",
+           "label": "at a slow pace",
+           "kind": "choice"
+          },
+          {
+           "id": "at-a-rapid-pace",
+           "label": "at a rapid pace",
+           "kind": "choice"
+          },
+          {
+           "id": "tangential",
+           "label": "tangential",
+           "kind": "choice"
+          },
+          {
+           "id": "pressured",
+           "label": "pressured",
+           "kind": "choice"
+          },
+          {
+           "id": "limited",
+           "label": "limited",
+           "kind": "choice"
+          }
+         ]
+        },
+        {
+         "id": "suffix",
+         "label": "Suffix",
+         "options": [
+          {
+           "id": "but-understandable",
+           "label": "but understandable",
+           "kind": "choice"
+          },
+          {
+           "id": "but-not-understandable",
+           "label": "but not understandable",
+           "kind": "choice"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "distress",
+       "label": "Distress",
+       "multi": false,
+       "options": [
+        {
+         "id": "did-not-appear-distressed",
+         "label": "did not appear distressed",
+         "kind": "choice"
+        },
+        {
+         "id": "distressed",
+         "label": "distressed",
+         "kind": "choice"
+        },
+        {
+         "id": "distressed-and-teary",
+         "label": "distressed and teary",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client did not appear distressed throughout the session.",
+        "Client appeared distressed throughout the session.",
+        "Client appeared distressed and teary during the session."
+       ],
+       "raw": "Client did not appear distressed throughout the session. -OR- Client appeared distressed throughout the session. -OR- Client appeared distressed and teary during the session."
+      },
+      {
+       "id": "additional-data",
+       "label": "Additional Data",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "risk-assessment",
+     "title": "Risk Assessment",
+     "items": [
+      {
+       "id": "no-reports-of-harm",
+       "label": "No reports of harm",
+       "multi": true,
+       "options": [
+        {
+         "id": "self-harm",
+         "label": "self-harm",
+         "kind": "choice"
+        },
+        {
+         "id": "suicidal",
+         "label": "suicidal",
+         "kind": "choice"
+        },
+        {
+         "id": "other-person-harm",
+         "label": "other-person-harm",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client reported no self-harm ideation.",
+        "Client reported no suicidal ideation.",
+        "Client reported no other-person-harm ideation.",
+        "Client reported no self-harm and other-person-harm ideation.",
+        "Client reported no suicidal and other-person-harm ideation.",
+        "Client reported no self-harm and suicidal ideation.",
+        "Client reported no self-harm, suicidal, and other-person harm ideation."
+       ],
+       "raw": "Client reported no self-harm ideation. -OR- Client reported no suicidal ideation. -OR- Client reported no other-person-harm ideation. -OR- Client reported no self-harm and other-person-harm ideation. -OR- Client reported no suicidal and other-person-harm ideation. -OR- Client reported no self-harm and suicidal ideation. -OR- Client reported no self-harm, suicidal, and other-person harm ideation."
+      },
+      {
+       "id": "ideation-type",
+       "label": "Ideation Type",
+       "multi": true,
+       "options": [
+        {
+         "id": "self-harm",
+         "label": "self-harm",
+         "kind": "choice"
+        },
+        {
+         "id": "suicidal",
+         "label": "suicidal",
+         "kind": "choice"
+        },
+        {
+         "id": "other-person-harm",
+         "label": "other-person-harm",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client reported self-harm ideation.",
+        "Client reported suicidal ideation.",
+        "Client reported other-person-harm ideation.",
+        "Client reported self-harm and other-person-harm ideation.",
+        "Client reported suicidal and other-person-harm ideation.",
+        "Client reported self-harm and suicidal ideation.",
+        "Client reported self-harm, suicidal, and other-person harm ideation."
+       ],
+       "raw": "Client reported self-harm ideation. -OR- Client reported suicidal ideation. -OR- Client reported other-person-harm ideation. -OR- Client reported self-harm and other-person-harm ideation. -OR- Client reported suicidal and other-person-harm ideation. -OR- Client reported self-harm and suicidal ideation. -OR- Client reported self-harm, suicidal, and other-person harm ideation."
+      },
+      {
+       "id": "intent",
+       "label": "Intent",
+       "multi": false,
+       "options": [
+        {
+         "id": "no-intent",
+         "label": "no intent",
+         "kind": "choice"
+        },
+        {
+         "id": "some-intent-no-plan",
+         "label": "some intent, no plan",
+         "kind": "choice"
+        },
+        {
+         "id": "intent-with-a-plan",
+         "label": "intent with a plan",
+         "kind": "choice"
+        },
+        {
+         "id": "please-describe-plan-s",
+         "label": "please describe plan(s)",
+         "prompt": "please describe plan(s)",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated no intent to action this ideation. Client indicated some intent, but no plan to action this ideation. Client indicated intent and plans (i.e., free text box) to action this ideation."
+       ],
+       "raw": "Client indicated no intent to action this ideation. Client indicated some intent, but no plan to action this ideation. Client indicated intent and plans (i.e., free text box) to action this ideation."
+      },
+      {
+       "id": "intent-frequency-thought-intensity",
+       "label": "Intent frequency & thought intensity",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Client indicated these thoughts occur X (prefix), at a X (suffix) level of intensity."
+       ],
+       "raw": "Client indicated these thoughts occur X (prefix), at a X (suffix) level of intensity.",
+       "groups": [
+        {
+         "id": "prefix",
+         "label": "Intent frequency",
+         "options": [
+          {
+           "id": "occasionally",
+           "label": "occasionally",
+           "kind": "choice"
+          },
+          {
+           "id": "weekly",
+           "label": "weekly",
+           "kind": "choice"
+          },
+          {
+           "id": "multiple-times-a-week",
+           "label": "multiple times a week",
+           "kind": "choice"
+          },
+          {
+           "id": "daily",
+           "label": "daily",
+           "kind": "choice"
+          }
+         ]
+        },
+        {
+         "id": "suffix",
+         "label": "Thought Intensity",
+         "options": [
+          {
+           "id": "low",
+           "label": "low",
+           "kind": "choice"
+          },
+          {
+           "id": "considerable",
+           "label": "considerable",
+           "kind": "choice"
+          },
+          {
+           "id": "high",
+           "label": "high",
+           "kind": "choice"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "history",
+       "label": "History",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "some",
+         "label": "some",
+         "kind": "choice"
+        },
+        {
+         "id": "extensive",
+         "label": "extensive",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client has no reported history of attempted self-harm or suicide.",
+        "Client has a reported history of suicide or self-harm.",
+        "Client has an extensive reported history of suicide or self-harm."
+       ],
+       "raw": "Client has no reported history of attempted self-harm or suicide. -OR- Client has a reported history of suicide or self-harm. -OR- Client has an extensive reported history of suicide or self-harm."
+      },
+      {
+       "id": "distress-level",
+       "label": "Distress Level",
+       "multi": false,
+       "options": [
+        {
+         "id": "heightened",
+         "label": "heightened",
+         "kind": "choice"
+        },
+        {
+         "id": "considerable",
+         "label": "considerable",
+         "kind": "choice"
+        },
+        {
+         "id": "limited",
+         "label": "limited",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Throughout this discussion, the client appeared to be in a X amount of distress."
+       ],
+       "raw": "Throughout this discussion, the client appeared to be in a X amount of distress."
+      },
+      {
+       "id": "stressors",
+       "label": "Stressors",
+       "multi": true,
+       "options": [
+        {
+         "id": "relational",
+         "label": "relational",
+         "kind": "choice"
+        },
+        {
+         "id": "family",
+         "label": "family",
+         "kind": "choice"
+        },
+        {
+         "id": "abuse-related",
+         "label": "abuse-related",
+         "kind": "choice"
+        },
+        {
+         "id": "domestic-violence-related",
+         "label": "domestic violence-related",
+         "kind": "choice"
+        },
+        {
+         "id": "illness-related",
+         "label": "illness-related",
+         "kind": "choice"
+        },
+        {
+         "id": "assault-related",
+         "label": "assault-related",
+         "kind": "choice"
+        },
+        {
+         "id": "employment-related",
+         "label": "employment-related",
+         "kind": "choice"
+        },
+        {
+         "id": "job-related",
+         "label": "job-related",
+         "kind": "choice"
+        },
+        {
+         "id": "loss-related",
+         "label": "loss-related",
+         "kind": "choice"
+        },
+        {
+         "id": "disability-related",
+         "label": "disability-related",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated X stressors.",
+        "Client indicated X and X stressors.",
+        "Client indicated X, X and X stressors."
+       ],
+       "raw": "Client indicated X stressors. -OR- Client indicated X and X stressors. -OR- Client indicated X, X and X stressors."
+      },
+      {
+       "id": "resources",
+       "label": "Resources",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "None",
+         "kind": "choice"
+        },
+        {
+         "id": "internal-and-external",
+         "label": "internal and external",
+         "kind": "choice"
+        },
+        {
+         "id": "no-internal-some-external-please-describe-resources",
+         "label": "no internal, some external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        },
+        {
+         "id": "some-internal-no-external-please-describe-resources",
+         "label": "some internal, no external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported having limited internal and external resources to assist with managing these stressors.",
+        "Client reported having limited internal and external resources to assist with managing these stressors.",
+        "Client reported having limited internal but some external resources (i.e., free text box) to assist with managing these stressors.",
+        "Client reported having some internal (i.e., free text box) but limited external resources to assist with managing these stressors."
+       ],
+       "raw": "Client reported having limited internal and external resources to assist with managing these stressors. -OR- Client reported having limited internal and external resources to assist with managing these stressors. -OR- Client reported having limited internal but some external resources (i.e., free text box) to assist with managing these stressors. -OR- Client reported having some internal (i.e., free text box) but limited external resources to assist with managing these stressors."
+      },
+      {
+       "id": "safety-plan",
+       "label": "Safety Plan",
+       "multi": false,
+       "options": [
+        {
+         "id": "completed-now",
+         "label": "completed now",
+         "kind": "choice"
+        },
+        {
+         "id": "reviewed-and-updated",
+         "label": "reviewed and updated",
+         "kind": "choice"
+        },
+        {
+         "id": "did-not-complete",
+         "label": "did not complete",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client completed a safety plan collaboratively with the author and were provided a copy. Client was provided emergency and crisis services.",
+        "Client and author collaboratively reviewed client's safety plan and were provided a copy. Client was provided emergency and crisis services.",
+        "Client did not wish to complete a safety plan. Client was provided emergency and crisis services."
+       ],
+       "raw": "Client completed a safety plan collaboratively with the author and were provided a copy. Client was provided emergency and crisis services. -OR- Client and author collaboratively reviewed client's safety plan and were provided a copy. Client was provided emergency and crisis services. -OR- Client did not wish to complete a safety plan. Client was provided emergency and crisis services."
+      },
+      {
+       "id": "determined-risk-level",
+       "label": "Determined Risk level",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "low",
+         "label": "low",
+         "kind": "choice"
+        },
+        {
+         "id": "medium",
+         "label": "medium",
+         "kind": "choice"
+        },
+        {
+         "id": "high",
+         "label": "high",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client did not present with any heightened risk factors of note",
+        "The author determined client to be at a low risk.",
+        "The author determined client to be at a medium risk.",
+        "The author determined client to be at a high risk."
+       ],
+       "raw": "Client did not present with any heightened risk factors of note -OR- The author determined client to be at a low risk. -OR- The author determined client to be at a medium risk. -OR- The author determined client to be at a high risk."
+      },
+      {
+       "id": "additional-details",
+       "label": "Additional Details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "session-content",
+     "title": "Session Content",
+     "items": [
+      {
+       "id": "limits-to-confidentiality",
+       "label": "Limits to Confidentiality",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client was explained and reportedly understood limits to confidentiality."
+       ],
+       "raw": "Client was explained and reportedly understood limits to confidentiality."
+      },
+      {
+       "id": "informed-consent",
+       "label": "Informed Consent",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client provided informed consent to session activities."
+       ],
+       "raw": "Client provided informed consent to session activities."
+      },
+      {
+       "id": "marital-status",
+       "label": "Marital Status",
+       "multi": false,
+       "options": [
+        {
+         "id": "single",
+         "label": "single",
+         "kind": "choice"
+        },
+        {
+         "id": "married",
+         "label": "married",
+         "kind": "choice"
+        },
+        {
+         "id": "separated",
+         "label": "separated",
+         "kind": "choice"
+        },
+        {
+         "id": "divorced",
+         "label": "divorced",
+         "kind": "choice"
+        },
+        {
+         "id": "widowed",
+         "label": "widowed",
+         "kind": "choice"
+        },
+        {
+         "id": "in-a-relationship",
+         "label": "in a relationship",
+         "kind": "choice"
+        },
+        {
+         "id": "de-facto",
+         "label": "de facto",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client reported they are currently single.",
+        "Client reported they are currently married.",
+        "Client reported they are currently separated.",
+        "Client reported they are currently divorced.",
+        "Client reported have been widowed.",
+        "Client reported they are currently in a relationship.",
+        "Client reported they are currently de facto status with their partner."
+       ],
+       "raw": "Client reported they are currently single. -OR- Client reported they are currently married. -OR- Client reported they are currently separated. -OR- Client reported they are currently divorced. -OR- Client reported have been widowed. -OR- Client reported they are currently in a relationship. -OR- Client reported they are currently de facto status with their partner. -OR-"
+      },
+      {
+       "id": "partner-details",
+       "label": "Partner details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported they have been with their partner (free text box 1, free text box 2- years-old) for approximately free text 3 years."
+       ],
+       "raw": "Client reported they have been with their partner (free text box 1, free text box 2- years-old) for approximately free text 3 years."
+      },
+      {
+       "id": "dependants",
+       "label": "Dependants",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "None",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        },
+        {
+         "id": "please-input-number-of-dependants",
+         "label": "please input number of dependants",
+         "prompt": "please input number of dependants",
+         "kind": "text"
+        },
+        {
+         "id": "please-provide-dependant-details-i-e-gender-age",
+         "label": "please provide dependant details (i.e., gender, age)",
+         "prompt": "please provide dependant details (i.e., gender, age)",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported they currently have no dependants.",
+        "Client reported they have free text box (number) dependants free text box (details)."
+       ],
+       "raw": "Client reported they currently have no dependants. -OR- Client reported they have free text box (number) dependants free text box (details)."
+      },
+      {
+       "id": "dependant-living-arrangement",
+       "label": "Dependant living arrangement",
+       "multi": false,
+       "options": [
+        {
+         "id": "with-client",
+         "label": "with client",
+         "kind": "choice"
+        },
+        {
+         "id": "away-from-client",
+         "label": "away from client",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client reported their dependants currently live with them at their residence.",
+        "Client reported their dependants currently do not live with them at their residence."
+       ],
+       "raw": "Client reported their dependants currently live with them at their residence. -OR- Client reported their dependants currently do not live with them at their residence."
+      },
+      {
+       "id": "work-status",
+       "label": "Work Status",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "working-full-dme",
+         "label": "working full Dme",
+         "kind": "choice"
+        },
+        {
+         "id": "working-part-dme",
+         "label": "working part-Dme",
+         "kind": "choice"
+        },
+        {
+         "id": "student-full-dme",
+         "label": "student full-Dme",
+         "kind": "choice"
+        },
+        {
+         "id": "student-part-dme",
+         "label": "student part-Dme",
+         "kind": "choice"
+        },
+        {
+         "id": "occupadon-study-field",
+         "label": "occupaDon/study field:",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported they are not currently employed.",
+        "Client reported they are currently employed on a full-time basis (free text box).",
+        "Client reported they are currently employed on a part-time basis (free text box).",
+        "Client reported they are currently studying on a full-time basis (free text box).",
+        "Client reported they are currently studying on a part-time basis (free text box)."
+       ],
+       "raw": "Client reported they are not currently employed. -OR- Client reported they are currently employed on a full-time basis (free text box). -OR- Client reported they are currently employed on a part-time basis (free text box). -OR- Client reported they are currently studying on a full-time basis (free text box). -OR- Client reported they are currently studying on a part-time basis (free text box)."
+      },
+      {
+       "id": "key-presenting-issues",
+       "label": "Key presenting issues",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated the following presenting concerns: free text box"
+       ],
+       "raw": "Client indicated the following presenting concerns: free text box"
+      },
+      {
+       "id": "presenting-issues-onset",
+       "label": "Presenting issues (onset)",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated the onset of the presenting concerns occurred approximately free text box prior."
+       ],
+       "raw": "Client indicated the onset of the presenting concerns occurred approximately free text box prior."
+      },
+      {
+       "id": "presenting-issues-duration",
+       "label": "Presenting issues (duration)",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated the presenting concerns occurred for approximately free text box."
+       ],
+       "raw": "Client indicated the presenting concerns occurred for approximately free text box."
+      },
+      {
+       "id": "prior-psychological-engagement",
+       "label": "Prior psychological engagement",
+       "multi": false,
+       "options": [
+        {
+         "id": "no",
+         "label": "No",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        },
+        {
+         "id": "reason-s-for-service-engagement",
+         "label": "reason(s) for service engagement",
+         "prompt": "reason(s) for service engagement",
+         "kind": "text"
+        },
+        {
+         "id": "service-provider-details",
+         "label": "service provider details",
+         "prompt": "service provider details",
+         "kind": "text"
+        },
+        {
+         "id": "approximate-engagement-duration",
+         "label": "approximate engagement duration",
+         "prompt": "approximate engagement duration",
+         "kind": "text"
+        },
+        {
+         "id": "reason-s-for-service-termination",
+         "label": "reason(s) for service termination",
+         "prompt": "reason(s) for service termination",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated no prior psychological service engagement.",
+        "Client indicated prior psychological service engagement.",
+        "Client indicated the following reasons for psychological service engagement: free text box, with the following provider: free text box, for approximately free text box.",
+        "Client indicated they terminated service engagement due to free text box."
+       ],
+       "raw": "Client indicated no prior psychological service engagement. -OR- Client indicated prior psychological service engagement. -AND/OR- Client indicated the following reasons for psychological service engagement: free text box, with the following provider: free text box, for approximately free text box. -AND/OR- Client indicated they terminated service engagement due to free text box."
+      },
+      {
+       "id": "hospitalisation-for-psychological-difficulties",
+       "label": "Hospitalisation for psychological difficulties",
+       "multi": false,
+       "options": [
+        {
+         "id": "no",
+         "label": "No",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        },
+        {
+         "id": "reason-s-for-hospitalisation",
+         "label": "reason(s) for hospitalisation",
+         "prompt": "reason(s) for hospitalisation",
+         "kind": "text"
+        },
+        {
+         "id": "other-details",
+         "label": "other details",
+         "prompt": "other details",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated no history of prior hospitalisation due to psychological difficulties.",
+        "Client indicated a history of prior hospitalisation due to psychological difficulties.",
+        "Client reported the reasons for this hospitalisation event included free text box.",
+        "*additional free text box if required*."
+       ],
+       "raw": "Client indicated no history of prior hospitalisation due to psychological difficulties. -OR- Client indicated a history of prior hospitalisation due to psychological difficulties. -AND/OR- Client reported the reasons for this hospitalisation event included free text box. -AND/OR-*additional free text box if required*."
+      },
+      {
+       "id": "medications",
+       "label": "Medications",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client denied any current medication use.",
+        "Client is reportedly currently using the following medications: free text box."
+       ],
+       "raw": "Client denied any current medication use. -OR- Client is reportedly currently using the following medications: free text box."
+      },
+      {
+       "id": "current-diagnoses",
+       "label": "Current Diagnoses",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "see-separate-dsm-v-tr-document-for-details",
+         "label": "See separate DSM-V-TR document for details",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client denied any current disorders/diagnoses.",
+        "Client reports currently living with the following diagnoses: free text box."
+       ],
+       "raw": "Client denied any current disorders/diagnoses.-OR- Client reports currently living with the following diagnoses: free text box."
+      },
+      {
+       "id": "reason-s-for-present-treatment-episode",
+       "label": "Reason(s) for present treatment episode",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported the reasons for this episode of treatment includes, free text box."
+       ],
+       "raw": "Client reported the reasons for this episode of treatment includes, free text box."
+      },
+      {
+       "id": "treatment-goals",
+       "label": "Treatment Goals",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported their present treatment goals include: free text box."
+       ],
+       "raw": "Client reported their present treatment goals include: free text box."
+      },
+      {
+       "id": "additional-key-session-information",
+       "label": "Additional key session information",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text box"
+       ],
+       "raw": "free text box"
+      }
+     ]
+    },
+    {
+     "id": "take-home-tasks",
+     "title": "Take Home Tasks",
+     "items": [
+      {
+       "id": "tasks-assigned",
+       "label": "Tasks assigned",
+       "multi": true,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "t-f-b-1-x-example",
+         "label": "t,f,b, (1 x example)",
+         "kind": "choice"
+        },
+        {
+         "id": "t-f-b-positive-and-negative",
+         "label": "t,f,b, (positive and negative)",
+         "kind": "choice"
+        },
+        {
+         "id": "thinking-traps",
+         "label": "thinking traps",
+         "kind": "choice"
+        },
+        {
+         "id": "exposure-hierarchy",
+         "label": "exposure hierarchy",
+         "kind": "choice"
+        },
+        {
+         "id": "daily-activity-schedule",
+         "label": "daily activity schedule",
+         "kind": "choice"
+        },
+        {
+         "id": "sleep-schedule",
+         "label": "sleep schedule",
+         "kind": "choice"
+        },
+        {
+         "id": "thought-record",
+         "label": "thought record",
+         "kind": "choice"
+        },
+        {
+         "id": "behavioural-experiment",
+         "label": "behavioural experiment",
+         "kind": "choice"
+        },
+        {
+         "id": "assertive-communication",
+         "label": "assertive communication",
+         "kind": "choice"
+        },
+        {
+         "id": "pro-vs-cons-list",
+         "label": "pro vs. cons list",
+         "kind": "choice"
+        },
+        {
+         "id": "list-of-concerns",
+         "label": "list of concerns",
+         "kind": "choice"
+        },
+        {
+         "id": "list-of-treatment-goals",
+         "label": "list of treatment goals",
+         "kind": "choice"
+        },
+        {
+         "id": "read-materials",
+         "label": "read materials",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "No take home tasks were discussed.",
+        "Client was requested to complete a thoughts, feelings, and behaviours cycle based on an experience over the next few days.",
+        "Client was requested to complete a minimum of two thoughts, feelings, and behaviours cycles with both positive and negative outcomes based on past experiences.",
+        "Client was requested to consider thinking traps and make a note of any examples of experiences between sessions.",
+        "Client was requested to consider the exposure hierarchy (and modify as they see appropriate).",
+        "Client was requested to complete a daily activity schedule.",
+        "Client requested to complete a sleep schedule.",
+        "Client was requested to complete a thought record.",
+        "Client was requested to complete a behavioural experiment as discussed.",
+        "Client was requested to complete a practice assertive communication as discussed.",
+        "Client was requested to complete a pros vs. cons list as discussed.",
+        "Client was requested to complete a list of concerns as discussed.",
+        "Client was requested to complete a list of treatment goals as discussed.",
+        "Client was requested to read material provided.",
+        "Client was requested to free text box"
+       ],
+       "raw": "No take home tasks were discussed. -OR- Client was requested to complete a thoughts, feelings, and behaviours cycle based on an experience over the next few days. -OR- Client was requested to complete a minimum of two thoughts, feelings, and behaviours cycles with both positive and negative outcomes based on past experiences. -OR- Client was requested to consider thinking traps and make a note of any examples of experiences between sessions.-OR- Client was requested to consider the exposure hierarchy (and modify as they see appropriate). -OR- Client was requested to complete a daily activity schedule. -OR- Client requested to complete a sleep schedule. -OR- Client was requested to complete a thought record. -OR- Client was requested to complete a behavioural experiment as discussed. -OR- Client was requested to complete a practice assertive communication as discussed. -OR- Client was requested to complete a pros vs. cons list as discussed. -OR- Client was requested to complete a list of concerns as discussed. -OR- Client was requested to complete a list of treatment goals as discussed. -OR- Client was requested to read material provided.-OR- Client was requested to free text box"
+      },
+      {
+       "id": "task-confidence",
+       "label": "Task Confidence",
+       "multi": false,
+       "options": [
+        {
+         "id": "no-barriers",
+         "label": "no barriers",
+         "kind": "choice"
+        },
+        {
+         "id": "some-barriers-but-agreed",
+         "label": "some barriers but agreed",
+         "kind": "choice"
+        },
+        {
+         "id": "some-barriers-tasks-modified",
+         "label": "some barriers, tasks modified",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client indicated no barriers to task completion.",
+        "Client presented some barriers to task completion but ultimately agreed.",
+        "Client presented some barriers to task completion, therefore tasks were modified. Client agreed to complete modified tasks."
+       ],
+       "raw": "Client indicated no barriers to task completion. -OR- Client presented some barriers to task completion but ultimately agreed. -OR- Client presented some barriers to task completion, therefore tasks were modified. Client agreed to complete modified tasks."
+      }
+     ]
+    },
+    {
+     "id": "plan",
+     "title": "Plan",
+     "items": [
+      {
+       "id": "future-session-plans",
+       "label": "Future session plans",
+       "multi": true,
+       "options": [
+        {
+         "id": "discuss-with-supervisor",
+         "label": "discuss with supervisor",
+         "kind": "choice"
+        },
+        {
+         "id": "continue-formulation",
+         "label": "continue formulation",
+         "kind": "choice"
+        },
+        {
+         "id": "present-client-formulation",
+         "label": "present client formulation",
+         "kind": "choice"
+        },
+        {
+         "id": "target-mood",
+         "label": "target mood",
+         "kind": "choice"
+        },
+        {
+         "id": "target-anxiety",
+         "label": "target anxiety",
+         "kind": "choice"
+        },
+        {
+         "id": "provide-psychoeducation",
+         "label": "provide psychoeducation",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "The author plans to discuss session content with their supervisor to inform treatment directions.",
+        "The author plans to continue formulation.",
+        "The author plans to present formulation to the client.",
+        "The author plans to employ evidence-based strategies to targeted to assist with low mood.",
+        "The author plans to employ evidence-based strategies to targeted to assist with excess anxiety.",
+        "The author plans to provide client psychoeducation.",
+        "The author plans to free text box"
+       ],
+       "raw": "The author plans to discuss session content with their supervisor to inform treatment directions.-OR- The author plans to continue formulation. -OR- The author plans to present formulation to the client. -OR- The author plans to employ evidence-based strategies to targeted to assist with low mood. -OR- The author plans to employ evidence-based strategies to targeted to assist with excess anxiety. -OR- The author plans to provide client psychoeducation. -OR- The author plans to free text box"
+      }
+     ]
+    },
+    {
+     "id": "next-session",
+     "title": "Next Session",
+     "items": [
+      {
+       "id": "next-scheduled-session",
+       "label": "Next scheduled session",
+       "multi": false,
+       "options": [
+        {
+         "id": "week",
+         "label": "Week",
+         "kind": "choice"
+        },
+        {
+         "id": "fortnight",
+         "label": "Fortnight",
+         "kind": "choice"
+        },
+        {
+         "id": "month",
+         "label": "Month",
+         "kind": "choice"
+        },
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "The next session with the author is planned in approximately a week.",
+        "The next session with the author is planned in approximately a fortnight.",
+        "The next session with the author is planned in approximately a month.",
+        "Client did not wish to schedule any future appointments and will contact the service to arrange a future appointment at their convenience."
+       ],
+       "raw": "The next session with the author is planned in approximately a week. -OR- The next session with the author is planned in approximately a fortnight. -OR- The next session with the author is planned in approximately a month. -OR- Client did not wish to schedule any future appointments and will contact the service to arrange a future appointment at their convenience."
+      },
+      {
+       "id": "calendar-date",
+       "label": "Calendar Date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "The next appointment is scheduled for DD/MM/YYYY."
+       ],
+       "raw": "The next appointment is scheduled for DD/MM/YYYY.",
+       "input": "date"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clinical-note",
+   "title": "Clinical Note",
+   "sections": [
+    {
+     "id": "clinical-note",
+     "title": "Clinical Note",
+     "items": [
+      {
+       "id": "session-number",
+       "label": "Session Number",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Session Number: X"
+       ],
+       "raw": "Session Number: X",
+       "input": "number"
+      },
+      {
+       "id": "date",
+       "label": "Date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Date: DD/MM/YYYY"
+       ],
+       "raw": "Date: DD/MM/YYYY",
+       "input": "date"
+      },
+      {
+       "id": "attendees",
+       "label": "Attendees",
+       "multi": false,
+       "options": [
+        {
+         "id": "author-and-client",
+         "label": "Author and client",
+         "kind": "choice"
+        },
+        {
+         "id": "author-client-and-client-s-guardian",
+         "label": "Author, client, and client's guardian",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Attendees: X"
+       ],
+       "raw": "Attendees: X"
+      },
+      {
+       "id": "mode",
+       "label": "Mode",
+       "multi": false,
+       "options": [
+        {
+         "id": "face-to-face",
+         "label": "Face-to-face",
+         "kind": "choice"
+        },
+        {
+         "id": "telehealth-video",
+         "label": "Telehealth (video)",
+         "kind": "choice"
+        },
+        {
+         "id": "telehealth-phone",
+         "label": "Telehealth (phone)",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Mode: X"
+       ],
+       "raw": "Mode: X"
+      },
+      {
+       "id": "intervention",
+       "label": "Intervention",
+       "multi": true,
+       "options": [
+        {
+         "id": "cbt",
+         "label": "CBT",
+         "kind": "choice"
+        },
+        {
+         "id": "act",
+         "label": "ACT",
+         "kind": "choice"
+        },
+        {
+         "id": "dbt",
+         "label": "DBT",
+         "kind": "choice"
+        },
+        {
+         "id": "mindfulness",
+         "label": "Mindfulness",
+         "kind": "choice"
+        },
+        {
+         "id": "schema-therapy",
+         "label": "Schema Therapy",
+         "kind": "choice"
+        },
+        {
+         "id": "emdr",
+         "label": "EMDR",
+         "kind": "choice"
+        },
+        {
+         "id": "solution-focused-therapy",
+         "label": "Solution Focused Therapy",
+         "kind": "choice"
+        },
+        {
+         "id": "gottman-therapy",
+         "label": "Gottman Therapy",
+         "kind": "choice"
+        },
+        {
+         "id": "psychodynamic-therapy",
+         "label": "Psychodynamic Therapy",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Intervention: X"
+       ],
+       "raw": "Intervention: X"
+      },
+      {
+       "id": "session-length",
+       "label": "Session Length",
+       "multi": false,
+       "options": [
+        {
+         "id": "50",
+         "label": "50",
+         "kind": "choice"
+        },
+        {
+         "id": "90",
+         "label": "90",
+         "kind": "choice"
+        },
+        {
+         "id": "180",
+         "label": "180",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Session Length: Approximately X minutes"
+       ],
+       "raw": "Session Length: Approximately X minutes"
+      },
+      {
+       "id": "interpreter",
+       "label": "Interpreter",
+       "multi": false,
+       "options": [
+        {
+         "id": "no",
+         "label": "No",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        },
+        {
+         "id": "please-insert-language",
+         "label": "Please insert language",
+         "prompt": "Please insert language",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "No interpreters were preset for this session. An interpreter (free text box) was present for this session."
+       ],
+       "raw": "No interpreters were preset for this session. An interpreter (free text box) was present for this session."
+      },
+      {
+       "id": "current-dsm-v-tr-diagnosis",
+       "label": "Current DSM-V-TR diagnosis",
+       "multi": false,
+       "options": [
+        {
+         "id": "see-separate-dsm-v-tr-document-for-details",
+         "label": "See separate DSM-V-TR document for details",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Current DSM-V-TR diagnosis: X"
+       ],
+       "raw": "Current DSM-V-TR diagnosis: X"
+      },
+      {
+       "id": "additional-data",
+       "label": "Additional Data",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "psychometric-assessment",
+     "title": "Psychometric Assessment",
+     "items": []
+    },
+    {
+     "id": "mental-status-exam",
+     "title": "Mental Status Exam",
+     "items": [
+      {
+       "id": "arrival-time",
+       "label": "Arrival time",
+       "multi": false,
+       "options": [
+        {
+         "id": "on-time",
+         "label": "on time",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-5-minutes-late",
+         "label": "approximately 5 minutes late",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-10-minutes-late",
+         "label": "approximately 10 minutes late",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-15-minutes-late",
+         "label": "approximately 15 minutes late",
+         "kind": "choice"
+        },
+        {
+         "id": "approximately-free-text-box-minutes-late",
+         "label": "approximately Free text box minutes late",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client arrived X to session"
+       ],
+       "raw": "Client arrived X to session"
+      },
+      {
+       "id": "grooming",
+       "label": "Grooming",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "inappropriate",
+         "label": "inappropriate",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client was X groomed and dressed to the session."
+       ],
+       "raw": "Client was X groomed and dressed to the session."
+      },
+      {
+       "id": "perceptual-disturbances",
+       "label": "Perceptual Disturbances",
+       "multi": false,
+       "options": [
+        {
+         "id": "oriented-to-p-t-p",
+         "label": "oriented to P,T,P",
+         "kind": "choice"
+        },
+        {
+         "id": "not-oriented-to-p-t-p",
+         "label": "not oriented to P,T,P",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client appeared oriented to person, time, and place, without indication of perceptual disturbances.",
+        "Client did not appear oriented to person, time, and place, suggesting a possible indication of perceptual disturbances."
+       ],
+       "raw": "Client appeared oriented to person, time, and place, without indication of perceptual disturbances. -OR- Client did not appear oriented to person, time, and place, suggesting a possible indication of perceptual disturbances."
+      },
+      {
+       "id": "eye-contact",
+       "label": "Eye Contact",
+       "multi": false,
+       "options": [
+        {
+         "id": "normal",
+         "label": "normal",
+         "kind": "choice"
+        },
+        {
+         "id": "avoidant",
+         "label": "avoidant",
+         "kind": "choice"
+        },
+        {
+         "id": "intense",
+         "label": "intense",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client's eye contact appeared X."
+       ],
+       "raw": "Client's eye contact appeared X."
+      },
+      {
+       "id": "movement-pace",
+       "label": "Movement Pace",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "slow",
+         "label": "slow",
+         "kind": "choice"
+        },
+        {
+         "id": "accelerated",
+         "label": "accelerated",
+         "kind": "choice"
+        },
+        {
+         "id": "peculiar",
+         "label": "peculiar",
+         "kind": "choice"
+        },
+        {
+         "id": "agitated-and-peculiar",
+         "label": "agitated and peculiar",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client moved at a X pace.",
+        "Client appeared agitated and moved at a peculiar pace."
+       ],
+       "raw": "Client moved at a X pace. -OR- Client appeared agitated and moved at a peculiar pace."
+      },
+      {
+       "id": "mood",
+       "label": "Mood",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "stable",
+         "label": "stable",
+         "kind": "choice"
+        },
+        {
+         "id": "depressed",
+         "label": "depressed",
+         "kind": "choice"
+        },
+        {
+         "id": "anxious",
+         "label": "anxious",
+         "kind": "choice"
+        },
+        {
+         "id": "euthymic",
+         "label": "euthymic",
+         "kind": "choice"
+        },
+        {
+         "id": "angry",
+         "label": "angry",
+         "kind": "choice"
+        },
+        {
+         "id": "euphoric",
+         "label": "euphoric",
+         "kind": "choice"
+        },
+        {
+         "id": "irritable",
+         "label": "irritable",
+         "kind": "choice"
+        },
+        {
+         "id": "silly",
+         "label": "silly",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client's mood appeared X.",
+        "Client's mood was appropriate to the session content."
+       ],
+       "raw": "Client's mood appeared X. -OR- Client's mood was appropriate to the session content."
+      },
+      {
+       "id": "affect",
+       "label": "Affect",
+       "multi": false,
+       "options": [
+        {
+         "id": "appropriate",
+         "label": "appropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "flat",
+         "label": "flat",
+         "kind": "choice"
+        },
+        {
+         "id": "labile",
+         "label": "labile",
+         "kind": "choice"
+        },
+        {
+         "id": "constricted",
+         "label": "constricted",
+         "kind": "choice"
+        },
+        {
+         "id": "full",
+         "label": "full",
+         "kind": "choice"
+        },
+        {
+         "id": "inappropriate",
+         "label": "inappropriate",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client's affect appeared X."
+       ],
+       "raw": "Client's affect appeared X."
+      },
+      {
+       "id": "engagement",
+       "label": "Engagement",
+       "multi": false,
+       "options": [
+        {
+         "id": "engaged",
+         "label": "engaged",
+         "kind": "choice"
+        },
+        {
+         "id": "disengaged",
+         "label": "disengaged",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client appeared X in session."
+       ],
+       "raw": "Client appeared X in session."
+      },
+      {
+       "id": "insight",
+       "label": "Insight",
+       "multi": false,
+       "options": [
+        {
+         "id": "fair",
+         "label": "Fair",
+         "kind": "choice"
+        },
+        {
+         "id": "limited",
+         "label": "limited",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client appeared to show X insight into their presentation and needs."
+       ],
+       "raw": "Client appeared to show X insight into their presentation and needs."
+      },
+      {
+       "id": "speech",
+       "label": "Speech",
+       "multi": false,
+       "options": [
+        {
+         "id": "clear-and-understandable",
+         "label": "clear and understandable",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client spoke clearly and was understandable",
+        "Prefix and suffix: Client spoke X,",
+        "Client was tangential veering from topics discussed,",
+        "Client's speech was pressured,",
+        "Client's speech was limited, AND but was understandable.",
+        "but was not understandable."
+       ],
+       "raw": "Client spoke clearly and was understandable -OR- Prefix and suffix: Client spoke X, -OR- Client was tangential veering from topics discussed, -OR- Client's speech was pressured, -OR- Client's speech was limited, AND but was understandable. -OR- but was not understandable.",
+       "groups": [
+        {
+         "id": "prefix",
+         "label": "Prefix",
+         "options": [
+          {
+           "id": "loudly",
+           "label": "loudly",
+           "kind": "choice"
+          },
+          {
+           "id": "softly",
+           "label": "softly",
+           "kind": "choice"
+          },
+          {
+           "id": "at-a-slow-pace",
+           "label": "at a slow pace",
+           "kind": "choice"
+          },
+          {
+           "id": "at-a-rapid-pace",
+           "label": "at a rapid pace",
+           "kind": "choice"
+          },
+          {
+           "id": "tangential",
+           "label": "tangential",
+           "kind": "choice"
+          },
+          {
+           "id": "pressured",
+           "label": "pressured",
+           "kind": "choice"
+          },
+          {
+           "id": "limited",
+           "label": "limited",
+           "kind": "choice"
+          }
+         ]
+        },
+        {
+         "id": "suffix",
+         "label": "Suffix",
+         "options": [
+          {
+           "id": "but-understandable",
+           "label": "but understandable",
+           "kind": "choice"
+          },
+          {
+           "id": "but-not-understandable",
+           "label": "but not understandable",
+           "kind": "choice"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "distress",
+       "label": "Distress",
+       "multi": false,
+       "options": [
+        {
+         "id": "did-not-appear-distressed",
+         "label": "did not appear distressed",
+         "kind": "choice"
+        },
+        {
+         "id": "distressed",
+         "label": "distressed",
+         "kind": "choice"
+        },
+        {
+         "id": "distressed-and-teary",
+         "label": "distressed and teary",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client did not appear distressed throughout the session.",
+        "Client appeared distressed throughout the session.",
+        "Client appeared distressed and teary during the session."
+       ],
+       "raw": "Client did not appear distressed throughout the session. -OR- Client appeared distressed throughout the session. -OR- Client appeared distressed and teary during the session."
+      },
+      {
+       "id": "additional-data",
+       "label": "Additional Data",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "risk-assessment",
+     "title": "Risk Assessment",
+     "items": [
+      {
+       "id": "no-reports-of-harm",
+       "label": "No reports of harm",
+       "multi": true,
+       "options": [
+        {
+         "id": "self-harm",
+         "label": "self-harm",
+         "kind": "choice"
+        },
+        {
+         "id": "suicidal",
+         "label": "suicidal",
+         "kind": "choice"
+        },
+        {
+         "id": "other-person-harm",
+         "label": "other-person-harm",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client reported no self-harm ideation.",
+        "Client reported no suicidal ideation.",
+        "Client reported no other-person-harm ideation.",
+        "Client reported no self-harm and other-person-harm ideation.",
+        "Client reported no suicidal and other-person-harm ideation.",
+        "Client reported no self-harm and suicidal ideation.",
+        "Client reported no self-harm, suicidal, and other-person harm ideation."
+       ],
+       "raw": "Client reported no self-harm ideation. -OR- Client reported no suicidal ideation. -OR- Client reported no other-person-harm ideation. -OR- Client reported no self-harm and other-person-harm ideation. -OR- Client reported no suicidal and other-person-harm ideation. -OR- Client reported no self-harm and suicidal ideation. -OR- Client reported no self-harm, suicidal, and other-person harm ideation."
+      },
+      {
+       "id": "ideation-type",
+       "label": "Ideation Type",
+       "multi": true,
+       "options": [
+        {
+         "id": "self-harm",
+         "label": "self-harm",
+         "kind": "choice"
+        },
+        {
+         "id": "suicidal",
+         "label": "suicidal",
+         "kind": "choice"
+        },
+        {
+         "id": "other-person-harm",
+         "label": "other-person-harm",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client reported self-harm ideation.",
+        "Client reported suicidal ideation.",
+        "Client reported other-person-harm ideation.",
+        "Client reported self-harm and other-person-harm ideation.",
+        "Client reported suicidal and other-person-harm ideation.",
+        "Client reported self-harm and suicidal ideation.",
+        "Client reported self-harm, suicidal, and other-person harm ideation."
+       ],
+       "raw": "Client reported self-harm ideation. -OR- Client reported suicidal ideation. -OR- Client reported other-person-harm ideation. -OR- Client reported self-harm and other-person-harm ideation. -OR- Client reported suicidal and other-person-harm ideation. -OR- Client reported self-harm and suicidal ideation. -OR- Client reported self-harm, suicidal, and other-person harm ideation."
+      },
+      {
+       "id": "intent",
+       "label": "Intent",
+       "multi": false,
+       "options": [
+        {
+         "id": "no-intent",
+         "label": "no intent",
+         "kind": "choice"
+        },
+        {
+         "id": "some-intent-no-plan",
+         "label": "some intent, no plan",
+         "kind": "choice"
+        },
+        {
+         "id": "intent-with-a-plan",
+         "label": "intent with a plan",
+         "kind": "choice"
+        },
+        {
+         "id": "please-describe-plan-s",
+         "label": "please describe plan(s)",
+         "prompt": "please describe plan(s)",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated no intent to action this ideation. Client indicated some intent, but no plan to action this ideation. Client indicated intent and plans (i.e., free text box) to action this ideation."
+       ],
+       "raw": "Client indicated no intent to action this ideation. Client indicated some intent, but no plan to action this ideation. Client indicated intent and plans (i.e., free text box) to action this ideation."
+      },
+      {
+       "id": "intent-frequency-thought-intensity",
+       "label": "Intent frequency & thought intensity",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Client indicated these thoughts occur X (prefix), at a X (suffix) level of intensity."
+       ],
+       "raw": "Client indicated these thoughts occur X (prefix), at a X (suffix) level of intensity.",
+       "groups": [
+        {
+         "id": "prefix",
+         "label": "Intent frequency",
+         "options": [
+          {
+           "id": "occasionally",
+           "label": "occasionally",
+           "kind": "choice"
+          },
+          {
+           "id": "weekly",
+           "label": "weekly",
+           "kind": "choice"
+          },
+          {
+           "id": "multiple-times-a-week",
+           "label": "multiple times a week",
+           "kind": "choice"
+          },
+          {
+           "id": "daily",
+           "label": "daily",
+           "kind": "choice"
+          }
+         ]
+        },
+        {
+         "id": "suffix",
+         "label": "Thought Intensity",
+         "options": [
+          {
+           "id": "low",
+           "label": "low",
+           "kind": "choice"
+          },
+          {
+           "id": "considerable",
+           "label": "considerable",
+           "kind": "choice"
+          },
+          {
+           "id": "high",
+           "label": "high",
+           "kind": "choice"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "history",
+       "label": "History",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "some",
+         "label": "some",
+         "kind": "choice"
+        },
+        {
+         "id": "extensive",
+         "label": "extensive",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client has no reported history of attempted self-harm or suicide.",
+        "Client has a reported history of suicide or self-harm.",
+        "Client has an extensive reported history of suicide or self-harm."
+       ],
+       "raw": "Client has no reported history of attempted self-harm or suicide. -OR- Client has a reported history of suicide or self-harm. -OR- Client has an extensive reported history of suicide or self-harm."
+      },
+      {
+       "id": "distress-level",
+       "label": "Distress Level",
+       "multi": false,
+       "options": [
+        {
+         "id": "heightened",
+         "label": "heightened",
+         "kind": "choice"
+        },
+        {
+         "id": "considerable",
+         "label": "considerable",
+         "kind": "choice"
+        },
+        {
+         "id": "limited",
+         "label": "limited",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Throughout this discussion, the client appeared to be in a X amount of distress."
+       ],
+       "raw": "Throughout this discussion, the client appeared to be in a X amount of distress."
+      },
+      {
+       "id": "stressors",
+       "label": "Stressors",
+       "multi": true,
+       "options": [
+        {
+         "id": "relational",
+         "label": "relational",
+         "kind": "choice"
+        },
+        {
+         "id": "family",
+         "label": "family",
+         "kind": "choice"
+        },
+        {
+         "id": "abuse-related",
+         "label": "abuse-related",
+         "kind": "choice"
+        },
+        {
+         "id": "domestic-violence-related",
+         "label": "domestic violence-related",
+         "kind": "choice"
+        },
+        {
+         "id": "illness-related",
+         "label": "illness-related",
+         "kind": "choice"
+        },
+        {
+         "id": "assault-related",
+         "label": "assault-related",
+         "kind": "choice"
+        },
+        {
+         "id": "employment-related",
+         "label": "employment-related",
+         "kind": "choice"
+        },
+        {
+         "id": "job-related",
+         "label": "job-related",
+         "kind": "choice"
+        },
+        {
+         "id": "loss-related",
+         "label": "loss-related",
+         "kind": "choice"
+        },
+        {
+         "id": "disability-related",
+         "label": "disability-related",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client indicated X stressors.",
+        "Client indicated X and X stressors.",
+        "Client indicated X, X and X stressors."
+       ],
+       "raw": "Client indicated X stressors. -OR- Client indicated X and X stressors. -OR- Client indicated X, X and X stressors."
+      },
+      {
+       "id": "resources",
+       "label": "Resources",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "None",
+         "kind": "choice"
+        },
+        {
+         "id": "internal-and-external",
+         "label": "internal and external",
+         "kind": "choice"
+        },
+        {
+         "id": "no-internal-some-external-please-describe-resources",
+         "label": "no internal, some external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        },
+        {
+         "id": "some-internal-no-external-please-describe-resources",
+         "label": "some internal, no external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client reported having limited internal and external resources to assist with managing these stressors.",
+        "Client reported having limited internal and external resources to assist with managing these stressors.",
+        "Client reported having limited internal but some external resources (i.e., free text box) to assist with managing these stressors.",
+        "Client reported having some internal (i.e., free text box) but limited external resources to assist with managing these stressors."
+       ],
+       "raw": "Client reported having limited internal and external resources to assist with managing these stressors. -OR- Client reported having limited internal and external resources to assist with managing these stressors. -OR- Client reported having limited internal but some external resources (i.e., free text box) to assist with managing these stressors. -OR- Client reported having some internal (i.e., free text box) but limited external resources to assist with managing these stressors."
+      },
+      {
+       "id": "safety-plan",
+       "label": "Safety Plan",
+       "multi": false,
+       "options": [
+        {
+         "id": "completed-now",
+         "label": "completed now",
+         "kind": "choice"
+        },
+        {
+         "id": "reviewed-and-updated",
+         "label": "reviewed and updated",
+         "kind": "choice"
+        },
+        {
+         "id": "did-not-complete",
+         "label": "did not complete",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client completed a safety plan collaboratively with the author and were provided a copy. Client was provided emergency and crisis services.",
+        "Client and author collaboratively reviewed client's safety plan and were provided a copy. Client was provided emergency and crisis services.",
+        "Client did not wish to complete a safety plan. Client was provided emergency and crisis services."
+       ],
+       "raw": "Client completed a safety plan collaboratively with the author and were provided a copy. Client was provided emergency and crisis services. -OR- Client and author collaboratively reviewed client's safety plan and were provided a copy. Client was provided emergency and crisis services. -OR- Client did not wish to complete a safety plan. Client was provided emergency and crisis services."
+      },
+      {
+       "id": "determined-risk-level",
+       "label": "Determined Risk level",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "low",
+         "label": "low",
+         "kind": "choice"
+        },
+        {
+         "id": "medium",
+         "label": "medium",
+         "kind": "choice"
+        },
+        {
+         "id": "high",
+         "label": "high",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Client did not present with any heightened risk factors of note",
+        "The author determined client to be at a low risk.",
+        "The author determined client to be at a medium risk.",
+        "The author determined client to be at a high risk."
+       ],
+       "raw": "Client did not present with any heightened risk factors of note -OR- The author determined client to be at a low risk. -OR- The author determined client to be at a medium risk. -OR- The author determined client to be at a high risk."
+      },
+      {
+       "id": "additional-details",
+       "label": "Additional Details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "previous-homework",
+     "title": "Previous Homework",
+     "items": [
+      {
+       "id": "homework-completion",
+       "label": "Homework Completion",
+       "multi": false,
+       "options": [
+        {
+         "id": "completed-correctly",
+         "label": "completed correctly",
+         "kind": "choice"
+        },
+        {
+         "id": "completed-with-errors",
+         "label": "completed with errors",
+         "kind": "choice"
+        },
+        {
+         "id": "homework-scanned-to-file",
+         "label": "homework scanned to file",
+         "kind": "choice"
+        },
+        {
+         "id": "did-not-complete-task",
+         "label": "did not complete task:",
+         "kind": "choice"
+        },
+        {
+         "id": "describe-reasons-for-task-non-completion",
+         "label": "describe reasons for task non-completion",
+         "prompt": "describe reasons for task non-completion",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "The client completed take-home tasks with minimal errors.- OR- The client completed take-home tasks with some errors that were corrected in session. -AND MAYBE- Client's work has been scanned to their file (see attached).",
+        "The client did not complete take-home tasks due to free text. This was collaboratively problem-solved, and client agreed to complete modified tasks this week"
+       ],
+       "raw": "The client completed take-home tasks with minimal errors.- OR- The client completed take-home tasks with some errors that were corrected in session. -AND MAYBE- Client's work has been scanned to their file (see attached). -OR- The client did not complete take-home tasks due to free text. This was collaboratively problem-solved, and client agreed to complete modified tasks this week"
+      }
+     ]
+    },
+    {
+     "id": "interventions-strategies-utilised",
+     "title": "Interventions/Strategies Utilised",
+     "items": [
+      {
+       "id": "strategy-employed",
+       "label": "Strategy employed",
+       "multi": true,
+       "options": [
+        {
+         "id": "analysis-of-intrusive-thoughts",
+         "label": "analysis of intrusive thoughts",
+         "kind": "choice"
+        },
+        {
+         "id": "analysis-of-automatic-thoughts",
+         "label": "analysis of automatic thoughts",
+         "kind": "choice"
+        },
+        {
+         "id": "anger-management",
+         "label": "anger management",
+         "kind": "choice"
+        },
+        {
+         "id": "behavioural-activation",
+         "label": "behavioural activation",
+         "kind": "choice"
+        },
+        {
+         "id": "boundary-setting",
+         "label": "boundary setting",
+         "kind": "choice"
+        },
+        {
+         "id": "breathing-exercises",
+         "label": "breathing exercises",
+         "kind": "choice"
+        },
+        {
+         "id": "chairwork",
+         "label": "chairwork",
+         "kind": "choice"
+        },
+        {
+         "id": "cognitive-diffusion",
+         "label": "cognitive diffusion",
+         "kind": "choice"
+        },
+        {
+         "id": "communication-skills",
+         "label": "communication skills",
+         "kind": "choice"
+        },
+        {
+         "id": "conflict-management",
+         "label": "conflict management",
+         "kind": "choice"
+        },
+        {
+         "id": "distress-tolerance",
+         "label": "distress tolerance",
+         "kind": "choice"
+        },
+        {
+         "id": "distress-tolerance",
+         "label": "distress tolerance",
+         "kind": "choice"
+        },
+        {
+         "id": "downward-arrow",
+         "label": "downward arrow",
+         "kind": "choice"
+        },
+        {
+         "id": "emdr-techniques",
+         "label": "EMDR techniques",
+         "kind": "choice"
+        },
+        {
+         "id": "exposure-strategies",
+         "label": "exposure strategies",
+         "kind": "choice"
+        },
+        {
+         "id": "gender-dysphoria",
+         "label": "gender dysphoria",
+         "kind": "choice"
+        },
+        {
+         "id": "imagery-rescripting",
+         "label": "imagery rescripting",
+         "kind": "choice"
+        },
+        {
+         "id": "impact-of-alcohol-use",
+         "label": "impact of alcohol use",
+         "kind": "choice"
+        },
+        {
+         "id": "impact-of-drug-use",
+         "label": "impact of drug use",
+         "kind": "choice"
+        },
+        {
+         "id": "increased-social-engagement",
+         "label": "increased social engagement",
+         "kind": "choice"
+        },
+        {
+         "id": "mindfulness",
+         "label": "mindfulness",
+         "kind": "choice"
+        },
+        {
+         "id": "perspective-taking",
+         "label": "perspective taking",
+         "kind": "choice"
+        },
+        {
+         "id": "psychoeducation",
+         "label": "psychoeducation",
+         "kind": "choice"
+        },
+        {
+         "id": "rapport-building",
+         "label": "rapport building",
+         "kind": "choice"
+        },
+        {
+         "id": "relapse-prevention",
+         "label": "relapse prevention",
+         "kind": "choice"
+        },
+        {
+         "id": "review-and-reflection-of-techniques-used",
+         "label": "review and reflection of techniques used",
+         "kind": "choice"
+        },
+        {
+         "id": "role-playing",
+         "label": "role playing",
+         "kind": "choice"
+        },
+        {
+         "id": "self-care",
+         "label": "self-care",
+         "kind": "choice"
+        },
+        {
+         "id": "sexual-difficulties",
+         "label": "sexual difficulties",
+         "kind": "choice"
+        },
+        {
+         "id": "sexuality-related-distress",
+         "label": "sexuality related distress",
+         "kind": "choice"
+        },
+        {
+         "id": "sleep-hygiene",
+         "label": "sleep hygiene",
+         "kind": "choice"
+        },
+        {
+         "id": "socratic-questioning",
+         "label": "Socratic questioning",
+         "kind": "choice"
+        },
+        {
+         "id": "thought-challenging",
+         "label": "thought challenging",
+         "kind": "choice"
+        },
+        {
+         "id": "thoughts-feelings-and-behaviours-analysis",
+         "label": "thoughts, feelings, and behaviours analysis",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "Interventions Utilised: X.",
+        "Interventions Utilised: X and X.",
+        "Interventions Utilised: X , X, and X."
+       ],
+       "raw": "Interventions Utilised: X.-OR- Interventions Utilised: X and X. -OR- Interventions Utilised: X , X, and X."
+      }
+     ]
+    },
+    {
+     "id": "session-content",
+     "title": "Session Content",
+     "items": [
+      {
+       "id": "limits-to-confidentiality",
+       "label": "Limits to Confidentiality",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client was explained and reportedly understood limits to confidentiality."
+       ],
+       "raw": "Client was explained and reportedly understood limits to confidentiality."
+      },
+      {
+       "id": "informed-consent",
+       "label": "Informed Consent",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client provided informed consent to session activities."
+       ],
+       "raw": "Client provided informed consent to session activities."
+      },
+      {
+       "id": "key-session-information",
+       "label": "Key session information",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "Yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "take-home-tasks",
+     "title": "Take Home Tasks",
+     "items": [
+      {
+       "id": "tasks-assigned",
+       "label": "Tasks assigned",
+       "multi": true,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "t-f-b-1-x-example",
+         "label": "t,f,b, (1 x example)",
+         "kind": "choice"
+        },
+        {
+         "id": "t-f-b-positive-and-negative",
+         "label": "t,f,b, (positive and negative)",
+         "kind": "choice"
+        },
+        {
+         "id": "thinking-traps",
+         "label": "thinking traps",
+         "kind": "choice"
+        },
+        {
+         "id": "exposure-hierarchy",
+         "label": "exposure hierarchy",
+         "kind": "choice"
+        },
+        {
+         "id": "daily-activity-schedule",
+         "label": "daily activity schedule",
+         "kind": "choice"
+        },
+        {
+         "id": "sleep-schedule",
+         "label": "sleep schedule",
+         "kind": "choice"
+        },
+        {
+         "id": "thought-record",
+         "label": "thought record",
+         "kind": "choice"
+        },
+        {
+         "id": "behavioural-experiment",
+         "label": "behavioural experiment",
+         "kind": "choice"
+        },
+        {
+         "id": "assertive-communication",
+         "label": "assertive communication",
+         "kind": "choice"
+        },
+        {
+         "id": "pro-vs-cons-list",
+         "label": "pro vs. cons list",
+         "kind": "choice"
+        },
+        {
+         "id": "list-of-concerns",
+         "label": "list of concerns",
+         "kind": "choice"
+        },
+        {
+         "id": "list-of-treatment-goals",
+         "label": "list of treatment goals",
+         "kind": "choice"
+        },
+        {
+         "id": "read-materials",
+         "label": "read materials",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "No take home tasks were discussed.",
+        "Client was requested to complete a thoughts, feelings, and behaviours cycle based on an experience over the next few days.",
+        "Client was requested to complete a minimum of two thoughts, feelings, and behaviours cycles with both positive and negative outcomes based on past experiences.",
+        "Client was requested to consider thinking traps and make a note of any examples of experiences between sessions.",
+        "Client was requested to consider the exposure hierarchy (and modify as they see appropriate).",
+        "Client was requested to complete a daily activity schedule.",
+        "Client requested to complete a sleep schedule.",
+        "Client was requested to complete a thought record.",
+        "Client was requested to complete a behavioural experiment as discussed.",
+        "Client was requested to complete a practice assertive communication as discussed.",
+        "Client was requested to complete a pros vs. cons list as discussed.",
+        "Client was requested to complete a list of concerns as discussed.",
+        "Client was requested to complete a list of treatment goals as discussed.",
+        "Client was requested to read material provided.",
+        "Client was requested to free text box"
+       ],
+       "raw": "No take home tasks were discussed. -OR- Client was requested to complete a thoughts, feelings, and behaviours cycle based on an experience over the next few days. -OR- Client was requested to complete a minimum of two thoughts, feelings, and behaviours cycles with both positive and negative outcomes based on past experiences. -OR- Client was requested to consider thinking traps and make a note of any examples of experiences between sessions.-OR- Client was requested to consider the exposure hierarchy (and modify as they see appropriate). -OR- Client was requested to complete a daily activity schedule. -OR- Client requested to complete a sleep schedule. -OR- Client was requested to complete a thought record. -OR- Client was requested to complete a behavioural experiment as discussed. -OR- Client was requested to complete a practice assertive communication as discussed. -OR- Client was requested to complete a pros vs. cons list as discussed. -OR- Client was requested to complete a list of concerns as discussed. -OR- Client was requested to complete a list of treatment goals as discussed. -OR- Client was requested to read material provided.-OR- Client was requested to free text box"
+      },
+      {
+       "id": "task-confidence",
+       "label": "Task Confidence",
+       "multi": false,
+       "options": [
+        {
+         "id": "no-barriers",
+         "label": "no barriers",
+         "kind": "choice"
+        },
+        {
+         "id": "some-barriers-but-agreed",
+         "label": "some barriers but agreed",
+         "kind": "choice"
+        },
+        {
+         "id": "some-barriers-tasks-modified",
+         "label": "some barriers, tasks modified",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Client indicated no barriers to task completion.",
+        "Client presented some barriers to task completion but ultimately agreed.",
+        "Client presented some barriers to task completion, therefore tasks were modified. Client agreed to complete modified tasks."
+       ],
+       "raw": "Client indicated no barriers to task completion. -OR- Client presented some barriers to task completion but ultimately agreed. -OR- Client presented some barriers to task completion, therefore tasks were modified. Client agreed to complete modified tasks."
+      }
+     ]
+    },
+    {
+     "id": "plan",
+     "title": "Plan",
+     "items": [
+      {
+       "id": "future-session-plans",
+       "label": "Future session plans",
+       "multi": false,
+       "options": [
+        {
+         "id": "discuss-with-supervisor",
+         "label": "discuss with supervisor",
+         "kind": "choice"
+        },
+        {
+         "id": "continue-formulation",
+         "label": "continue formulation",
+         "kind": "choice"
+        },
+        {
+         "id": "present-client-formulation",
+         "label": "present client formulation",
+         "kind": "choice"
+        },
+        {
+         "id": "target-mood",
+         "label": "target mood",
+         "kind": "choice"
+        },
+        {
+         "id": "target-anxiety",
+         "label": "target anxiety",
+         "kind": "choice"
+        },
+        {
+         "id": "provide-psychoeducation",
+         "label": "provide psychoeducation",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "The author plans to discuss session content with their supervisor to inform treatment directions.",
+        "The author plans to continue formulation.",
+        "The author plans to present formulation to the client.",
+        "The author plans to employ evidence-based strategies to targeted to assist with low mood.",
+        "The author plans to employ evidence-based strategies to targeted to assist with excess anxiety.",
+        "The author plans to provide client psychoeducation.",
+        "The author plans to free text box"
+       ],
+       "raw": "The author plans to discuss session content with their supervisor to inform treatment directions.-OR- The author plans to continue formulation. -OR- The author plans to present formulation to the client. -OR- The author plans to employ evidence-based strategies to targeted to assist with low mood. -OR- The author plans to employ evidence-based strategies to targeted to assist with excess anxiety. -OR- The author plans to provide client psychoeducation. -OR- The author plans to free text box"
+      }
+     ]
+    },
+    {
+     "id": "next-session",
+     "title": "Next Session",
+     "items": [
+      {
+       "id": "next-scheduled-session",
+       "label": "Next scheduled session",
+       "multi": false,
+       "options": [
+        {
+         "id": "week",
+         "label": "Week",
+         "kind": "choice"
+        },
+        {
+         "id": "fortnight",
+         "label": "Fortnight",
+         "kind": "choice"
+        },
+        {
+         "id": "month",
+         "label": "Month",
+         "kind": "choice"
+        },
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "The next session with the author is planned in approximately a week.",
+        "The next session with the author is planned in approximately a fortnight.",
+        "The next session with the author is planned in approximately a month.",
+        "Client did not wish to schedule any future appointments and will contact the service to arrange a future appointment at their convenience."
+       ],
+       "raw": "The next session with the author is planned in approximately a week. -OR- The next session with the author is planned in approximately a fortnight. -OR- The next session with the author is planned in approximately a month. -OR- Client did not wish to schedule any future appointments and will contact the service to arrange a future appointment at their convenience."
+      },
+      {
+       "id": "calendar-date",
+       "label": "Calendar Date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "The next appointment is scheduled for DD/MM/YYYY."
+       ],
+       "raw": "The next appointment is scheduled for DD/MM/YYYY.",
+       "input": "date"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "progress-letter",
+   "title": "Clinical Progress Letter",
+   "sections": [
+    {
+     "id": "section-1",
+     "title": "Section 1",
+     "items": [
+      {
+       "id": "honorific",
+       "label": "Honorific",
+       "multi": false,
+       "options": [
+        {
+         "id": "dr",
+         "label": "Dr",
+         "kind": "choice"
+        },
+        {
+         "id": "prof",
+         "label": "Prof",
+         "kind": "choice"
+        },
+        {
+         "id": "mr",
+         "label": "Mr",
+         "kind": "choice"
+        },
+        {
+         "id": "mrs",
+         "label": "Mrs",
+         "kind": "choice"
+        },
+        {
+         "id": "ms",
+         "label": "Ms",
+         "kind": "choice"
+        },
+        {
+         "id": "miss",
+         "label": "Miss",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "first-name-free-text-box",
+       "label": "First name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "last-name-free-text-box",
+       "label": "Last name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever addressee honorific option user selects* ; *whatever addressee first-name text user completes* ; and *whatever addressee last-name text user completes*"
+       ],
+       "raw": "*whatever addressee honorific option user selects* ; *whatever addressee first-name text user completes* ; and *whatever addressee last-name text user completes*"
+      },
+      {
+       "id": "address",
+       "label": "Address",
+       "multi": false,
+       "options": [
+        {
+         "id": "all-free-text-box",
+         "label": "All free text box",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever text user completes*"
+       ],
+       "raw": "*whatever text user completes*"
+      }
+     ]
+    },
+    {
+     "id": "section-2",
+     "title": "Section 2",
+     "items": [
+      {
+       "id": "honorific",
+       "label": "Honorific",
+       "multi": false,
+       "options": [
+        {
+         "id": "mr",
+         "label": "Mr",
+         "kind": "choice"
+        },
+        {
+         "id": "mrs",
+         "label": "Mrs",
+         "kind": "choice"
+        },
+        {
+         "id": "ms",
+         "label": "Ms",
+         "kind": "choice"
+        },
+        {
+         "id": "miss",
+         "label": "Miss",
+         "kind": "choice"
+        },
+        {
+         "id": "dr",
+         "label": "Dr",
+         "kind": "choice"
+        },
+        {
+         "id": "prof",
+         "label": "Prof",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "first-name-free-text-box",
+       "label": "First name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "last-name-free-text-box",
+       "label": "Last name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "CLIENT NAME: *whatever client honorific option user selects* ; *whatever client first-name text user completes* ; and *whatever client last-name text user completes*"
+       ],
+       "raw": "CLIENT NAME: *whatever client honorific option user selects* ; *whatever client first-name text user completes* ; and *whatever client last-name text user completes*"
+      },
+      {
+       "id": "gender-pronouns",
+       "label": "Gender Pronouns",
+       "multi": false,
+       "options": [
+        {
+         "id": "he-him",
+         "label": "(He/Him)",
+         "kind": "choice"
+        },
+        {
+         "id": "she-her",
+         "label": "(She/Her)",
+         "kind": "choice"
+        },
+        {
+         "id": "they-them",
+         "label": "(They/Them)",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever option user selects*"
+       ],
+       "raw": "*whatever option user selects*"
+      },
+      {
+       "id": "dob",
+       "label": "DOB",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Date: DD/MM/YYYY"
+       ],
+       "raw": "Date: DD/MM/YYYY",
+       "input": "date"
+      },
+      {
+       "id": "additional-data",
+       "label": "Additional Data",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "section-3",
+     "title": "Section 3",
+     "items": [
+      {
+       "id": "document-date",
+       "label": "Document Date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Date: DD/MM/YYYY"
+       ],
+       "raw": "Date: DD/MM/YYYY",
+       "input": "date"
+      }
+     ]
+    },
+    {
+     "id": "introduction",
+     "title": "Introduction",
+     "items": [
+      {
+       "id": "salutation",
+       "label": "Salutation",
+       "multi": false,
+       "options": [
+        {
+         "id": "checkbox-to-opt-in",
+         "label": "Checkbox to opt in",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Dear *addressee honorific* ; *addressee first-name* ; and *addressee last- name*"
+       ],
+       "raw": "Dear *addressee honorific* ; *addressee first-name* ; and *addressee last- name*"
+      },
+      {
+       "id": "referral-acknowledgment",
+       "label": "Referral Acknowledgment",
+       "multi": false,
+       "options": [
+        {
+         "id": "checkbox-to-opt-in",
+         "label": "Checkbox to opt in",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Thank you for referring *client honorific * ; * client first-name* ; and * client last- name* for psychological services."
+       ],
+       "raw": "Thank you for referring *client honorific * ; * client first-name* ; and * client last- name* for psychological services."
+      },
+      {
+       "id": "number-of",
+       "label": "Number of",
+       "multi": false,
+       "options": [
+        {
+         "id": "one",
+         "label": "one",
+         "kind": "choice"
+        },
+        {
+         "id": "two",
+         "label": "two",
+         "kind": "choice"
+        },
+        {
+         "id": "three",
+         "label": "three",
+         "kind": "choice"
+        },
+        {
+         "id": "four",
+         "label": "four",
+         "kind": "choice"
+        },
+        {
+         "id": "five",
+         "label": "five",
+         "kind": "choice"
+        },
+        {
+         "id": "six",
+         "label": "six",
+         "kind": "choice"
+        },
+        {
+         "id": "seven",
+         "label": "seven",
+         "kind": "choice"
+        },
+        {
+         "id": "eight",
+         "label": "eight",
+         "kind": "choice"
+        },
+        {
+         "id": "nine",
+         "label": "nine",
+         "kind": "choice"
+        },
+        {
+         "id": "ten",
+         "label": "ten",
+         "kind": "choice"
+        },
+        {
+         "id": "eleven",
+         "label": "eleven",
+         "kind": "choice"
+        },
+        {
+         "id": "twelve",
+         "label": "twelve",
+         "kind": "choice"
+        },
+        {
+         "id": "thirteen",
+         "label": "thirteen",
+         "kind": "choice"
+        },
+        {
+         "id": "fourteen",
+         "label": "fourteen",
+         "kind": "choice"
+        },
+        {
+         "id": "fimeen",
+         "label": "fimeen",
+         "kind": "choice"
+        },
+        {
+         "id": "sixteen",
+         "label": "sixteen",
+         "kind": "choice"
+        },
+        {
+         "id": "seventeen",
+         "label": "seventeen",
+         "kind": "choice"
+        },
+        {
+         "id": "eighteen",
+         "label": "eighteen",
+         "kind": "choice"
+        },
+        {
+         "id": "nineteen",
+         "label": "nineteen",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty",
+         "label": "twenty",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-one",
+         "label": "twenty-one",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-two",
+         "label": "twenty-two",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-three",
+         "label": "twenty-three",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-four",
+         "label": "twenty-four",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-five",
+         "label": "twenty-five",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "I have now seen *client honorific * ; and * client last-name* for a total of X sessions."
+       ],
+       "raw": "I have now seen *client honorific * ; and * client last-name* for a total of X sessions."
+      },
+      {
+       "id": "referral-reason",
+       "label": "Referral Reason",
+       "multi": true,
+       "options": [
+        {
+         "id": "adjustment",
+         "label": "adjustment",
+         "kind": "choice"
+        },
+        {
+         "id": "ageing",
+         "label": "ageing",
+         "kind": "choice"
+        },
+        {
+         "id": "alcohol-use",
+         "label": "alcohol use",
+         "kind": "choice"
+        },
+        {
+         "id": "anxiety",
+         "label": "anxiety",
+         "kind": "choice"
+        },
+        {
+         "id": "drug-use",
+         "label": "drug use",
+         "kind": "choice"
+        },
+        {
+         "id": "infidelity",
+         "label": "infidelity",
+         "kind": "choice"
+        },
+        {
+         "id": "interpersonal",
+         "label": "interpersonal",
+         "kind": "choice"
+        },
+        {
+         "id": "mood",
+         "label": "mood",
+         "kind": "choice"
+        },
+        {
+         "id": "modvadon",
+         "label": "moDvaDon",
+         "kind": "choice"
+        },
+        {
+         "id": "neurological",
+         "label": "neurological",
+         "kind": "choice"
+        },
+        {
+         "id": "phobia",
+         "label": "phobia",
+         "kind": "choice"
+        },
+        {
+         "id": "producdvity",
+         "label": "producDvity",
+         "kind": "choice"
+        },
+        {
+         "id": "psychosis",
+         "label": "psychosis",
+         "kind": "choice"
+        },
+        {
+         "id": "reladonal",
+         "label": "relaDonal",
+         "kind": "choice"
+        },
+        {
+         "id": "ruminadon",
+         "label": "ruminaDon",
+         "kind": "choice"
+        },
+        {
+         "id": "school",
+         "label": "school",
+         "kind": "choice"
+        },
+        {
+         "id": "sleeping",
+         "label": "sleeping",
+         "kind": "choice"
+        },
+        {
+         "id": "stress",
+         "label": "stress",
+         "kind": "choice"
+        },
+        {
+         "id": "study",
+         "label": "study",
+         "kind": "choice"
+        },
+        {
+         "id": "dmeline",
+         "label": "Dmeline",
+         "kind": "choice"
+        },
+        {
+         "id": "workplace-stress",
+         "label": "workplace stress",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* was referred to my services to assist with X related concerns"
+       ],
+       "raw": "*client honorific * ; and * client last-name* was referred to my services to assist with X related concerns"
+      },
+      {
+       "id": "attendance-motivation",
+       "label": "Attendance Motivation",
+       "multi": false,
+       "options": [
+        {
+         "id": "weekly",
+         "label": "weekly",
+         "kind": "choice"
+        },
+        {
+         "id": "fortnightly",
+         "label": "fortnightly",
+         "kind": "choice"
+        },
+        {
+         "id": "monthly",
+         "label": "monthly",
+         "kind": "choice"
+        },
+        {
+         "id": "regular",
+         "label": "regular",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "To date, *client honorific * ; and * client last-name* a3ended X sessions, suggesDng they are moDvated to change."
+       ],
+       "raw": "To date, *client honorific * ; and * client last-name* a3ended X sessions, suggesDng they are moDvated to change."
+      }
+     ]
+    },
+    {
+     "id": "risk-assessment",
+     "title": "Risk Assessment",
+     "items": [
+      {
+       "id": "intent",
+       "label": "Intent",
+       "multi": false,
+       "options": [
+        {
+         "id": "no-intent",
+         "label": "no intent",
+         "kind": "choice"
+        },
+        {
+         "id": "some-intent-no-plan",
+         "label": "some intent, no plan",
+         "kind": "choice"
+        },
+        {
+         "id": "intent-with-a-plan",
+         "label": "intent with a plan",
+         "kind": "choice"
+        },
+        {
+         "id": "please-describe-plan-s",
+         "label": "please describe plan(s)",
+         "prompt": "please describe plan(s)",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* has not indicated any risk of harm to self or others.",
+        "*client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent but no plans.",
+        "*client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent and planning. -AND MAYBE- More specifically, *client honorific * ; and * client last-name has reported they plan to free text box."
+       ],
+       "raw": "*client honorific * ; and * client last-name* has not indicated any risk of harm to self or others. -OR- *client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent but no plans. -OR- *client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent and planning. -AND MAYBE- More specifically, *client honorific * ; and * client last-name has reported they plan to free text box."
+      },
+      {
+       "id": "ideation-type",
+       "label": "Ideation Type",
+       "multi": true,
+       "options": [
+        {
+         "id": "self-harm",
+         "label": "self-harm",
+         "kind": "choice"
+        },
+        {
+         "id": "suicidal",
+         "label": "suicidal",
+         "kind": "choice"
+        },
+        {
+         "id": "other-person-harm",
+         "label": "other-person-harm",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* presented with self-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with suicidal ideation.",
+        "*client honorific * ; and * client last-name* presented with other-person-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with self-harm and other- person-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with suicidal and other- person-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with self-harm and suicidal ideation.",
+        "*client honorific * ; and * client last-name* presented with self-harm, suicidal, and other-person harm ideation."
+       ],
+       "raw": "*client honorific * ; and * client last-name* presented with self-harm ideation. -OR- *client honorific * ; and * client last-name* presented with suicidal ideation. -OR- *client honorific * ; and * client last-name* presented with other-person-harm ideation. -OR- *client honorific * ; and * client last-name* presented with self-harm and other- person-harm ideation. -OR- *client honorific * ; and * client last-name* presented with suicidal and other- person-harm ideation. -OR- *client honorific * ; and * client last-name* presented with self-harm and suicidal ideation. -OR- *client honorific * ; and * client last-name* presented with self-harm, suicidal, and other-person harm ideation."
+      },
+      {
+       "id": "intent-frequency-thought-intensity",
+       "label": "Intent frequency & thought intensity",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "*client honorific * ; and * client last-name* indicated these thoughts occur X (prefix), at a X (suffix) level of intensity."
+       ],
+       "raw": "*client honorific * ; and * client last-name* indicated these thoughts occur X (prefix), at a X (suffix) level of intensity.",
+       "groups": [
+        {
+         "id": "prefix",
+         "label": "Intent frequency",
+         "options": [
+          {
+           "id": "occasionally",
+           "label": "occasionally",
+           "kind": "choice"
+          },
+          {
+           "id": "weekly",
+           "label": "weekly",
+           "kind": "choice"
+          },
+          {
+           "id": "multiple-times-a-week",
+           "label": "multiple times a week",
+           "kind": "choice"
+          },
+          {
+           "id": "daily",
+           "label": "daily",
+           "kind": "choice"
+          }
+         ]
+        },
+        {
+         "id": "suffix",
+         "label": "Thought Intensity",
+         "options": [
+          {
+           "id": "low",
+           "label": "low",
+           "kind": "choice"
+          },
+          {
+           "id": "considerable",
+           "label": "considerable",
+           "kind": "choice"
+          },
+          {
+           "id": "high",
+           "label": "high",
+           "kind": "choice"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "history",
+       "label": "History",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "some",
+         "label": "some",
+         "kind": "choice"
+        },
+        {
+         "id": "extensive",
+         "label": "extensive",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* has no reported history of attempted self-harm or suicide.",
+        "*client honorific * ; and * client last-name* has a reported history of suicide or self- harm.",
+        "*client honorific * ; and * client last-name* has an extensive reported history of suicide or self-harm."
+       ],
+       "raw": "*client honorific * ; and * client last-name* has no reported history of attempted self-harm or suicide. -OR- *client honorific * ; and * client last-name* has a reported history of suicide or self- harm. -OR- *client honorific * ; and * client last-name* has an extensive reported history of suicide or self-harm."
+      },
+      {
+       "id": "resources",
+       "label": "Resources",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "None",
+         "kind": "choice"
+        },
+        {
+         "id": "internal-and-external",
+         "label": "internal and external",
+         "kind": "choice"
+        },
+        {
+         "id": "no-internal-some-external-please-describe-resources",
+         "label": "no internal, some external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        },
+        {
+         "id": "some-internal-no-external-please-describe-resources",
+         "label": "some internal, no external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* reported having limited internal and external resources to assist with managing these thoughts.",
+        "*client honorific * ; and * client last-name*reported having limited internal and external resources to assist with managing these thoughts.",
+        "*client honorific * ; and * client last-name*reported having limited internal but some external resources (i.e., free text box) to assist with managing these thoughts.",
+        "*client honorific * ; and * client last-name* reported having some internal (i.e., free text box) but limited external resources to assist with managing these thoughts."
+       ],
+       "raw": "*client honorific * ; and * client last-name* reported having limited internal and external resources to assist with managing these thoughts. -OR- *client honorific * ; and * client last-name*reported having limited internal and external resources to assist with managing these thoughts. -OR- *client honorific * ; and * client last-name*reported having limited internal but some external resources (i.e., free text box) to assist with managing these thoughts. -OR- *client honorific * ; and * client last-name* reported having some internal (i.e., free text box) but limited external resources to assist with managing these thoughts."
+      },
+      {
+       "id": "safety-plan",
+       "label": "Safety Plan",
+       "multi": false,
+       "options": [
+        {
+         "id": "completed-now",
+         "label": "completed now",
+         "kind": "choice"
+        },
+        {
+         "id": "reviewed-and-updated",
+         "label": "reviewed and updated",
+         "kind": "choice"
+        },
+        {
+         "id": "did-not-complete",
+         "label": "did not complete",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* completed a safety plan collaboratively with myself and were provided a copy (which included appropriate emergency and crisis services).",
+        "*client honorific * ; and * client last-name* safety plan was collaboratively reviewed and they and were provided a copy (which included appropriate emergency and crisis services).",
+        "*client honorific * ; and * client last-name* did not wish to complete a safety plan, in lieu of this they were provided with appropriate emergency and crisis services."
+       ],
+       "raw": "*client honorific * ; and * client last-name* completed a safety plan collaboratively with myself and were provided a copy (which included appropriate emergency and crisis services). -OR- *client honorific * ; and * client last-name* safety plan was collaboratively reviewed and they and were provided a copy (which included appropriate emergency and crisis services). -OR- *client honorific * ; and * client last-name* did not wish to complete a safety plan, in lieu of this they were provided with appropriate emergency and crisis services."
+      },
+      {
+       "id": "determined-risk-level",
+       "label": "Determined Risk level",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "low",
+         "label": "low",
+         "kind": "choice"
+        },
+        {
+         "id": "medium",
+         "label": "medium",
+         "kind": "choice"
+        },
+        {
+         "id": "high",
+         "label": "high",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "As a result, *client honorific * ; and * client last-name* does not appear to present with any significant risk factors of note",
+        "As a result, I believe *client honorific * ; and * client last-name* to be at a low risk.",
+        "As a result, I believe *client honorific * ; and * client last-name* to be at a medium risk.",
+        "As a result, I believe *client honorific * ; and * client last-name* to be at a high risk."
+       ],
+       "raw": "As a result, *client honorific * ; and * client last-name* does not appear to present with any significant risk factors of note -OR- As a result, I believe *client honorific * ; and * client last-name* to be at a low risk. -OR- As a result, I believe *client honorific * ; and * client last-name* to be at a medium risk. -OR- As a result, I believe *client honorific * ; and * client last-name* to be at a high risk."
+      },
+      {
+       "id": "additional-details",
+       "label": "Additional Details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "presentation-details",
+     "title": "Presentation Details",
+     "items": [
+      {
+       "id": "diagnostic-status-diagnosis-considered",
+       "label": "Diagnostic status (diagnosis considered)",
+       "multi": false,
+       "options": [
+        {
+         "id": "see-separate-dsm-v-tr-document-for-details",
+         "label": "See separate DSM-V-TR document for details",
+         "kind": "choice"
+        },
+        {
+         "id": "yes",
+         "label": "yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "After a thorough assessment, it is my opinion that *client honorific * ; and * client last-name* appears to have met the diagnostic criteria for *disorder selected*, according to the DSM-V-TR (American Psychological Association, 2022).",
+        "After a thorough assessment, it is my opinion that *client honorific * ; and * client last-name* does not appear to have met the diagnostic criteria for *disorder selected*, according to the DSM-V-TR (American Psychological Association, 2022)."
+       ],
+       "raw": "After a thorough assessment, it is my opinion that *client honorific * ; and * client last-name* appears to have met the diagnostic criteria for *disorder selected*, according to the DSM-V-TR (American Psychological Association, 2022). -OR- After a thorough assessment, it is my opinion that *client honorific * ; and * client last-name* does not appear to have met the diagnostic criteria for *disorder selected*, according to the DSM-V-TR (American Psychological Association, 2022)."
+      },
+      {
+       "id": "further-relevant-details",
+       "label": "Further relevant details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "baseline-psychometric-outcomes",
+     "title": "Baseline Psychometric Outcomes",
+     "items": [
+      {
+       "id": "initial-capture-date",
+       "label": "Initial capture date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Baseline psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:"
+       ],
+       "raw": "Baseline psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:",
+       "input": "date"
+      }
+     ]
+    },
+    {
+     "id": "follow-up-psychometric-outcomes",
+     "title": "Follow Up Psychometric Outcomes",
+     "items": [
+      {
+       "id": "follow-up-capture-date",
+       "label": "Follow up capture date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Follow up psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:"
+       ],
+       "raw": "Follow up psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:",
+       "input": "date"
+      }
+     ]
+    },
+    {
+     "id": "interpretation",
+     "title": "Interpretation",
+     "items": [
+      {
+       "id": "further-relevant-details",
+       "label": "Further relevant details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "treatment-outcomes-and-recommendations",
+     "title": "Treatment Outcomes And Recommendations",
+     "items": [
+      {
+       "id": "positive-treatment-outcomes",
+       "label": "Positive treatment outcomes",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Taken together, *client honorific * ; and * client last-name*'s psychometric assessment outcomes and self-report data indicate their presentaDon has been improving.",
+        "I therefore request approval from you to provide *client honorific * ; and * client last- name* with further psychological support and maintain these gains."
+       ],
+       "raw": "Taken together, *client honorific * ; and * client last-name*'s psychometric assessment outcomes and self-report data indicate their presentaDon has been improving. -AND/OR- I therefore request approval from you to provide *client honorific * ; and * client last- name* with further psychological support and maintain these gains.",
+       "input": "text"
+      },
+      {
+       "id": "further-details-free-text-box",
+       "label": "Further details:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever text author completes*"
+       ],
+       "raw": "*whatever text author completes*"
+      }
+     ]
+    },
+    {
+     "id": "contact-details",
+     "title": "Contact Details",
+     "items": [
+      {
+       "id": "permission-to-be-contacted",
+       "label": "Permission to be contacted",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Should you require any further information regarding *client honorific * ; and * client last-name*'s care please do not hesitate to reach out to me"
+       ],
+       "raw": "Should you require any further information regarding *client honorific * ; and * client last-name*'s care please do not hesitate to reach out to me"
+      },
+      {
+       "id": "via-email",
+       "label": "via email",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "via email on *email user completed*"
+       ],
+       "raw": "via email on *email user completed*"
+      },
+      {
+       "id": "via-phone",
+       "label": "via phone",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "or via phone on *phone user completed*."
+       ],
+       "raw": "or via phone on *phone user completed*."
+      }
+     ]
+    },
+    {
+     "id": "author-details",
+     "title": "Author Details",
+     "items": [
+      {
+       "id": "sign-off",
+       "label": "Sign off",
+       "multi": false,
+       "options": [
+        {
+         "id": "regards",
+         "label": "Regards",
+         "kind": "choice"
+        },
+        {
+         "id": "sincerely",
+         "label": "Sincerely",
+         "kind": "choice"
+        },
+        {
+         "id": "yours-truly",
+         "label": "Yours Truly",
+         "kind": "choice"
+        },
+        {
+         "id": "respecsully",
+         "label": "Respecsully",
+         "kind": "choice"
+        },
+        {
+         "id": "kind-regards",
+         "label": "Kind Regards",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever sign-option used selects*; *followed by three line spaces to fill online/handwritten signature*"
+       ],
+       "raw": "*whatever sign-option used selects*; *followed by three line spaces to fill online/handwritten signature*"
+      },
+      {
+       "id": "honorific",
+       "label": "Honorific",
+       "multi": false,
+       "options": [
+        {
+         "id": "mr",
+         "label": "Mr",
+         "kind": "choice"
+        },
+        {
+         "id": "mrs",
+         "label": "Mrs",
+         "kind": "choice"
+        },
+        {
+         "id": "ms",
+         "label": "Ms",
+         "kind": "choice"
+        },
+        {
+         "id": "miss",
+         "label": "Miss",
+         "kind": "choice"
+        },
+        {
+         "id": "dr",
+         "label": "Dr",
+         "kind": "choice"
+        },
+        {
+         "id": "prof",
+         "label": "Prof",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "first-name-free-text-box",
+       "label": "First name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "last-name-free-text-box",
+       "label": "Last name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever author honorific option user selects* ; *whatever author first-name text user completes* ; and *whatever author last-name text user completes*"
+       ],
+       "raw": "*whatever author honorific option user selects* ; *whatever author first-name text user completes* ; and *whatever author last-name text user completes*"
+      },
+      {
+       "id": "title",
+       "label": "Title",
+       "multi": false,
+       "options": [
+        {
+         "id": "psychologist",
+         "label": "Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "general-psychologist",
+         "label": "General Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "clinical-psychologist",
+         "label": "Clinical Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "clinical-neuropsychologist",
+         "label": "Clinical Neuropsychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "forensic-psychologist",
+         "label": "Forensic Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "counselling-psychologist",
+         "label": "Counselling Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "organisational-psychologist",
+         "label": "Organisational Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "health-psychologist",
+         "label": "Health Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "educational-and-development-psychologist",
+         "label": "Educational and Development Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "community-psychologist",
+         "label": "Community Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "if-registrar-status-is-selected-then-registrar-should-be-added-to-the-end-of-the-dtle",
+         "label": "If registrar status is selected then \"Registrar\" should be added to the end of the Dtle",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever title option user selects*; *add Registrar if selected*"
+       ],
+       "raw": "*whatever title option user selects*; *add Registrar if selected*"
+      },
+      {
+       "id": "organisation-free-text-box",
+       "label": "Organisation:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever organisation user completes*"
+       ],
+       "raw": "*whatever organisation user completes*"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cognitive-assessment",
+   "title": "Cognitive Assessment Letter",
+   "sections": [
+    {
+     "id": "section-1",
+     "title": "Section 1",
+     "items": [
+      {
+       "id": "honorific",
+       "label": "Honorific",
+       "multi": false,
+       "options": [
+        {
+         "id": "dr",
+         "label": "Dr",
+         "kind": "choice"
+        },
+        {
+         "id": "prof",
+         "label": "Prof",
+         "kind": "choice"
+        },
+        {
+         "id": "mr",
+         "label": "Mr",
+         "kind": "choice"
+        },
+        {
+         "id": "mrs",
+         "label": "Mrs",
+         "kind": "choice"
+        },
+        {
+         "id": "ms",
+         "label": "Ms",
+         "kind": "choice"
+        },
+        {
+         "id": "miss",
+         "label": "Miss",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "first-name-free-text-box",
+       "label": "First name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "last-name-free-text-box",
+       "label": "Last name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever addressee honorific option user selects* ; *whatever addressee first-name text user completes* ; and *whatever addressee last-name text user completes*"
+       ],
+       "raw": "*whatever addressee honorific option user selects* ; *whatever addressee first-name text user completes* ; and *whatever addressee last-name text user completes*"
+      },
+      {
+       "id": "address",
+       "label": "Address",
+       "multi": false,
+       "options": [
+        {
+         "id": "all-free-text-box",
+         "label": "All free text box",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever text user completes*"
+       ],
+       "raw": "*whatever text user completes*"
+      }
+     ]
+    },
+    {
+     "id": "section-2",
+     "title": "Section 2",
+     "items": [
+      {
+       "id": "honorific",
+       "label": "Honorific",
+       "multi": false,
+       "options": [
+        {
+         "id": "mr",
+         "label": "Mr",
+         "kind": "choice"
+        },
+        {
+         "id": "mrs",
+         "label": "Mrs",
+         "kind": "choice"
+        },
+        {
+         "id": "ms",
+         "label": "Ms",
+         "kind": "choice"
+        },
+        {
+         "id": "miss",
+         "label": "Miss",
+         "kind": "choice"
+        },
+        {
+         "id": "dr",
+         "label": "Dr",
+         "kind": "choice"
+        },
+        {
+         "id": "prof",
+         "label": "Prof",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "first-name-free-text-box",
+       "label": "First name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "last-name-free-text-box",
+       "label": "Last name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "CLIENT NAME: *whatever client honorific option user selects* ; *whatever client first-name text user completes* ; and *whatever client last-name text user completes*"
+       ],
+       "raw": "CLIENT NAME: *whatever client honorific option user selects* ; *whatever client first-name text user completes* ; and *whatever client last-name text user completes*"
+      },
+      {
+       "id": "gender-pronouns",
+       "label": "Gender Pronouns",
+       "multi": false,
+       "options": [
+        {
+         "id": "he-him",
+         "label": "(He/Him)",
+         "kind": "choice"
+        },
+        {
+         "id": "she-her",
+         "label": "(She/Her)",
+         "kind": "choice"
+        },
+        {
+         "id": "they-them",
+         "label": "(They/Them)",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever option user selects*"
+       ],
+       "raw": "*whatever option user selects*"
+      },
+      {
+       "id": "dob",
+       "label": "DOB",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Date: DD/MM/YYYY"
+       ],
+       "raw": "Date: DD/MM/YYYY",
+       "input": "date"
+      },
+      {
+       "id": "additional-data",
+       "label": "Additional Data",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "section-3",
+     "title": "Section 3",
+     "items": [
+      {
+       "id": "document-date",
+       "label": "Document Date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Date: DD/MM/YYYY"
+       ],
+       "raw": "Date: DD/MM/YYYY",
+       "input": "date"
+      }
+     ]
+    },
+    {
+     "id": "introduction",
+     "title": "Introduction",
+     "items": [
+      {
+       "id": "salutation",
+       "label": "Salutation",
+       "multi": false,
+       "options": [
+        {
+         "id": "checkbox-to-opt-in",
+         "label": "Checkbox to opt in",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Dear *addressee honorific* ; *addressee first-name* ; and *addressee last- name*"
+       ],
+       "raw": "Dear *addressee honorific* ; *addressee first-name* ; and *addressee last- name*"
+      },
+      {
+       "id": "referral-acknowledgment",
+       "label": "Referral Acknowledgment",
+       "multi": false,
+       "options": [
+        {
+         "id": "checkbox-to-opt-in",
+         "label": "Checkbox to opt in",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Thank you for referring *client honorific * ; * client first-name* ; and * client last- name* for psychological assessment services."
+       ],
+       "raw": "Thank you for referring *client honorific * ; * client first-name* ; and * client last- name* for psychological assessment services."
+      },
+      {
+       "id": "number-of",
+       "label": "Number of",
+       "multi": false,
+       "options": [
+        {
+         "id": "one",
+         "label": "one",
+         "kind": "choice"
+        },
+        {
+         "id": "two",
+         "label": "two",
+         "kind": "choice"
+        },
+        {
+         "id": "three",
+         "label": "three",
+         "kind": "choice"
+        },
+        {
+         "id": "four",
+         "label": "four",
+         "kind": "choice"
+        },
+        {
+         "id": "five",
+         "label": "five",
+         "kind": "choice"
+        },
+        {
+         "id": "six",
+         "label": "six",
+         "kind": "choice"
+        },
+        {
+         "id": "seven",
+         "label": "seven",
+         "kind": "choice"
+        },
+        {
+         "id": "eight",
+         "label": "eight",
+         "kind": "choice"
+        },
+        {
+         "id": "nine",
+         "label": "nine",
+         "kind": "choice"
+        },
+        {
+         "id": "ten",
+         "label": "ten",
+         "kind": "choice"
+        },
+        {
+         "id": "eleven",
+         "label": "eleven",
+         "kind": "choice"
+        },
+        {
+         "id": "twelve",
+         "label": "twelve",
+         "kind": "choice"
+        },
+        {
+         "id": "thirteen",
+         "label": "thirteen",
+         "kind": "choice"
+        },
+        {
+         "id": "fourteen",
+         "label": "fourteen",
+         "kind": "choice"
+        },
+        {
+         "id": "fimeen",
+         "label": "fimeen",
+         "kind": "choice"
+        },
+        {
+         "id": "sixteen",
+         "label": "sixteen",
+         "kind": "choice"
+        },
+        {
+         "id": "seventeen",
+         "label": "seventeen",
+         "kind": "choice"
+        },
+        {
+         "id": "eighteen",
+         "label": "eighteen",
+         "kind": "choice"
+        },
+        {
+         "id": "nineteen",
+         "label": "nineteen",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty",
+         "label": "twenty",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-one",
+         "label": "twenty-one",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-two",
+         "label": "twenty-two",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-three",
+         "label": "twenty-three",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-four",
+         "label": "twenty-four",
+         "kind": "choice"
+        },
+        {
+         "id": "twenty-five",
+         "label": "twenty-five",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "I have now seen *client honorific * ; and * client last-name* for a total of X sessions."
+       ],
+       "raw": "I have now seen *client honorific * ; and * client last-name* for a total of X sessions."
+      },
+      {
+       "id": "referral-reason",
+       "label": "Referral Reason",
+       "multi": true,
+       "options": [
+        {
+         "id": "adjustment",
+         "label": "adjustment",
+         "kind": "choice"
+        },
+        {
+         "id": "ageing",
+         "label": "ageing",
+         "kind": "choice"
+        },
+        {
+         "id": "alcohol-use",
+         "label": "alcohol use",
+         "kind": "choice"
+        },
+        {
+         "id": "anxiety",
+         "label": "anxiety",
+         "kind": "choice"
+        },
+        {
+         "id": "drug-use",
+         "label": "drug use",
+         "kind": "choice"
+        },
+        {
+         "id": "infidelity",
+         "label": "infidelity",
+         "kind": "choice"
+        },
+        {
+         "id": "interpersonal",
+         "label": "interpersonal",
+         "kind": "choice"
+        },
+        {
+         "id": "mood",
+         "label": "mood",
+         "kind": "choice"
+        },
+        {
+         "id": "modvadon",
+         "label": "moDvaDon",
+         "kind": "choice"
+        },
+        {
+         "id": "neurological",
+         "label": "neurological",
+         "kind": "choice"
+        },
+        {
+         "id": "phobia",
+         "label": "phobia",
+         "kind": "choice"
+        },
+        {
+         "id": "producdvity",
+         "label": "producDvity",
+         "kind": "choice"
+        },
+        {
+         "id": "psychosis",
+         "label": "psychosis",
+         "kind": "choice"
+        },
+        {
+         "id": "reladonal",
+         "label": "relaDonal",
+         "kind": "choice"
+        },
+        {
+         "id": "ruminadon",
+         "label": "ruminaDon",
+         "kind": "choice"
+        },
+        {
+         "id": "school",
+         "label": "school",
+         "kind": "choice"
+        },
+        {
+         "id": "sleeping",
+         "label": "sleeping",
+         "kind": "choice"
+        },
+        {
+         "id": "stress",
+         "label": "stress",
+         "kind": "choice"
+        },
+        {
+         "id": "study",
+         "label": "study",
+         "kind": "choice"
+        },
+        {
+         "id": "dmeline",
+         "label": "Dmeline",
+         "kind": "choice"
+        },
+        {
+         "id": "workplace-stress",
+         "label": "workplace stress",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* was referred to my services to assist with X related concerns Item 5 from clinical letter was removed."
+       ],
+       "raw": "*client honorific * ; and * client last-name* was referred to my services to assist with X related concerns Item 5 from clinical letter was removed."
+      }
+     ]
+    },
+    {
+     "id": "risk-assessment",
+     "title": "Risk Assessment",
+     "items": [
+      {
+       "id": "intent",
+       "label": "Intent",
+       "multi": false,
+       "options": [
+        {
+         "id": "no-intent",
+         "label": "no intent",
+         "kind": "choice"
+        },
+        {
+         "id": "some-intent-no-plan",
+         "label": "some intent, no plan",
+         "kind": "choice"
+        },
+        {
+         "id": "intent-with-a-plan",
+         "label": "intent with a plan",
+         "kind": "choice"
+        },
+        {
+         "id": "please-describe-plan-s",
+         "label": "please describe plan(s)",
+         "prompt": "please describe plan(s)",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* has not indicated any risk of harm to self or others.",
+        "*client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent but no plans.",
+        "*client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent and planning. -AND MAYBE- More specifically, *client honorific * ; and * client last-name has reported they plan to free text box."
+       ],
+       "raw": "*client honorific * ; and * client last-name* has not indicated any risk of harm to self or others. -OR- *client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent but no plans. -OR- *client honorific * ; and * client last-name* has indicated some risk of harm; namely some intent and planning. -AND MAYBE- More specifically, *client honorific * ; and * client last-name has reported they plan to free text box."
+      },
+      {
+       "id": "ideation-type",
+       "label": "Ideation Type",
+       "multi": true,
+       "options": [
+        {
+         "id": "self-harm",
+         "label": "self-harm",
+         "kind": "choice"
+        },
+        {
+         "id": "suicidal",
+         "label": "suicidal",
+         "kind": "choice"
+        },
+        {
+         "id": "other-person-harm",
+         "label": "other-person-harm",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* presented with self-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with suicidal ideation.",
+        "*client honorific * ; and * client last-name* presented with other-person-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with self-harm and other- person-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with suicidal and other- person-harm ideation.",
+        "*client honorific * ; and * client last-name* presented with self-harm and suicidal ideation.",
+        "*client honorific * ; and * client last-name* presented with self-harm, suicidal, and other-person harm ideation."
+       ],
+       "raw": "*client honorific * ; and * client last-name* presented with self-harm ideation. -OR- *client honorific * ; and * client last-name* presented with suicidal ideation. -OR- *client honorific * ; and * client last-name* presented with other-person-harm ideation. -OR- *client honorific * ; and * client last-name* presented with self-harm and other- person-harm ideation. -OR- *client honorific * ; and * client last-name* presented with suicidal and other- person-harm ideation. -OR- *client honorific * ; and * client last-name* presented with self-harm and suicidal ideation. -OR- *client honorific * ; and * client last-name* presented with self-harm, suicidal, and other-person harm ideation."
+      },
+      {
+       "id": "intent-frequency-thought-intensity",
+       "label": "Intent frequency & thought intensity",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "*client honorific * ; and * client last-name* indicated these thoughts occur X (prefix), at a X (suffix) level of intensity."
+       ],
+       "raw": "*client honorific * ; and * client last-name* indicated these thoughts occur X (prefix), at a X (suffix) level of intensity.",
+       "groups": [
+        {
+         "id": "prefix",
+         "label": "Intent frequency",
+         "options": [
+          {
+           "id": "occasionally",
+           "label": "occasionally",
+           "kind": "choice"
+          },
+          {
+           "id": "weekly",
+           "label": "weekly",
+           "kind": "choice"
+          },
+          {
+           "id": "multiple-times-a-week",
+           "label": "multiple times a week",
+           "kind": "choice"
+          },
+          {
+           "id": "daily",
+           "label": "daily",
+           "kind": "choice"
+          }
+         ]
+        },
+        {
+         "id": "suffix",
+         "label": "Thought Intensity",
+         "options": [
+          {
+           "id": "low",
+           "label": "low",
+           "kind": "choice"
+          },
+          {
+           "id": "considerable",
+           "label": "considerable",
+           "kind": "choice"
+          },
+          {
+           "id": "high",
+           "label": "high",
+           "kind": "choice"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "history",
+       "label": "History",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "some",
+         "label": "some",
+         "kind": "choice"
+        },
+        {
+         "id": "extensive",
+         "label": "extensive",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* has no reported history of attempted self-harm or suicide.",
+        "*client honorific * ; and * client last-name* has a reported history of suicide or self- harm.",
+        "*client honorific * ; and * client last-name* has an extensive reported history of suicide or self-harm."
+       ],
+       "raw": "*client honorific * ; and * client last-name* has no reported history of attempted self-harm or suicide. -OR- *client honorific * ; and * client last-name* has a reported history of suicide or self- harm. -OR- *client honorific * ; and * client last-name* has an extensive reported history of suicide or self-harm."
+      },
+      {
+       "id": "resources",
+       "label": "Resources",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "None",
+         "kind": "choice"
+        },
+        {
+         "id": "internal-and-external",
+         "label": "internal and external",
+         "kind": "choice"
+        },
+        {
+         "id": "no-internal-some-external-please-describe-resources",
+         "label": "no internal, some external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        },
+        {
+         "id": "some-internal-no-external-please-describe-resources",
+         "label": "some internal, no external (please describe resources):",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* reported having limited internal and external resources to assist with managing these thoughts.",
+        "*client honorific * ; and * client last-name*reported having limited internal and external resources to assist with managing these thoughts.",
+        "*client honorific * ; and * client last-name*reported having limited internal but some external resources (i.e., free text box) to assist with managing these thoughts.",
+        "*client honorific * ; and * client last-name* reported having some internal (i.e., free text box) but limited external resources to assist with managing these thoughts."
+       ],
+       "raw": "*client honorific * ; and * client last-name* reported having limited internal and external resources to assist with managing these thoughts. -OR- *client honorific * ; and * client last-name*reported having limited internal and external resources to assist with managing these thoughts. -OR- *client honorific * ; and * client last-name*reported having limited internal but some external resources (i.e., free text box) to assist with managing these thoughts. -OR- *client honorific * ; and * client last-name* reported having some internal (i.e., free text box) but limited external resources to assist with managing these thoughts."
+      },
+      {
+       "id": "safety-plan",
+       "label": "Safety Plan",
+       "multi": false,
+       "options": [
+        {
+         "id": "completed-now",
+         "label": "completed now",
+         "kind": "choice"
+        },
+        {
+         "id": "reviewed-and-updated",
+         "label": "reviewed and updated",
+         "kind": "choice"
+        },
+        {
+         "id": "did-not-complete",
+         "label": "did not complete",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*client honorific * ; and * client last-name* completed a safety plan collaboratively with myself and were provided a copy (which included appropriate emergency and crisis services).",
+        "*client honorific * ; and * client last-name* safety plan was collaboratively reviewed and they and were provided a copy (which included appropriate emergency and crisis services).",
+        "*client honorific * ; and * client last-name* did not wish to complete a safety plan, in lieu of this they were provided with appropriate emergency and crisis services."
+       ],
+       "raw": "*client honorific * ; and * client last-name* completed a safety plan collaboratively with myself and were provided a copy (which included appropriate emergency and crisis services). -OR- *client honorific * ; and * client last-name* safety plan was collaboratively reviewed and they and were provided a copy (which included appropriate emergency and crisis services). -OR- *client honorific * ; and * client last-name* did not wish to complete a safety plan, in lieu of this they were provided with appropriate emergency and crisis services."
+      },
+      {
+       "id": "determined-risk-level",
+       "label": "Determined Risk level",
+       "multi": false,
+       "options": [
+        {
+         "id": "none",
+         "label": "none",
+         "kind": "choice"
+        },
+        {
+         "id": "low",
+         "label": "low",
+         "kind": "choice"
+        },
+        {
+         "id": "medium",
+         "label": "medium",
+         "kind": "choice"
+        },
+        {
+         "id": "high",
+         "label": "high",
+         "kind": "choice"
+        },
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "As a result, *client honorific * ; and * client last-name* does not appear to present with any significant risk factors of note",
+        "As a result, I believe *client honorific * ; and * client last-name* to be at a low risk.",
+        "As a result, I believe *client honorific * ; and * client last-name* to be at a medium risk.",
+        "As a result, I believe *client honorific * ; and * client last-name* to be at a high risk."
+       ],
+       "raw": "As a result, *client honorific * ; and * client last-name* does not appear to present with any significant risk factors of note -OR- As a result, I believe *client honorific * ; and * client last-name* to be at a low risk. -OR- As a result, I believe *client honorific * ; and * client last-name* to be at a medium risk. -OR- As a result, I believe *client honorific * ; and * client last-name* to be at a high risk."
+      },
+      {
+       "id": "additional-details",
+       "label": "Additional Details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "presentation-details",
+     "title": "Presentation Details",
+     "items": [
+      {
+       "id": "relevant-details",
+       "label": "Relevant details",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "free text"
+       ],
+       "raw": "free text"
+      }
+     ]
+    },
+    {
+     "id": "baseline-psychometric-outcomes",
+     "title": "Baseline Psychometric Outcomes",
+     "items": [
+      {
+       "id": "initial-capture-date",
+       "label": "Initial capture date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Baseline psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:"
+       ],
+       "raw": "Baseline psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:",
+       "input": "date"
+      }
+     ]
+    },
+    {
+     "id": "follow-up-psychometric-outcomes",
+     "title": "Follow Up Psychometric Outcomes",
+     "items": [
+      {
+       "id": "follow-up-capture-date",
+       "label": "Follow-up capture date",
+       "multi": false,
+       "options": [],
+       "variants": [
+        "Follow-up psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:"
+       ],
+       "raw": "Follow-up psychometric data was captured on DD/MM/YYYY please see details below. Adult assessments:",
+       "input": "date"
+      }
+     ]
+    },
+    {
+     "id": "contact-details",
+     "title": "Contact Details",
+     "items": [
+      {
+       "id": "permission-to-be-contacted",
+       "label": "Permission to be contacted",
+       "multi": false,
+       "options": [
+        {
+         "id": "yes",
+         "label": "yes",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "Should you require any further information regarding *client honorific * ; and * client last-name*'s care please do not hesitate to reach out to me"
+       ],
+       "raw": "Should you require any further information regarding *client honorific * ; and * client last-name*'s care please do not hesitate to reach out to me"
+      },
+      {
+       "id": "via-email",
+       "label": "via email",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "via email on *email user completed*"
+       ],
+       "raw": "via email on *email user completed*"
+      },
+      {
+       "id": "via-phone",
+       "label": "via phone",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "or via phone on *phone user completed*."
+       ],
+       "raw": "or via phone on *phone user completed*."
+      }
+     ]
+    },
+    {
+     "id": "author-details",
+     "title": "Author Details",
+     "items": [
+      {
+       "id": "sign-off",
+       "label": "Sign off",
+       "multi": false,
+       "options": [
+        {
+         "id": "regards",
+         "label": "Regards",
+         "kind": "choice"
+        },
+        {
+         "id": "sincerely",
+         "label": "Sincerely",
+         "kind": "choice"
+        },
+        {
+         "id": "yours-truly",
+         "label": "Yours Truly",
+         "kind": "choice"
+        },
+        {
+         "id": "respecsully",
+         "label": "Respecsully",
+         "kind": "choice"
+        },
+        {
+         "id": "kind-regards",
+         "label": "Kind Regards",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever sign-option used selects*; *followed by three line spaces to fill online/handwritten signature*"
+       ],
+       "raw": "*whatever sign-option used selects*; *followed by three line spaces to fill online/handwritten signature*"
+      },
+      {
+       "id": "honorific",
+       "label": "Honorific",
+       "multi": false,
+       "options": [
+        {
+         "id": "mr",
+         "label": "Mr",
+         "kind": "choice"
+        },
+        {
+         "id": "mrs",
+         "label": "Mrs",
+         "kind": "choice"
+        },
+        {
+         "id": "ms",
+         "label": "Ms",
+         "kind": "choice"
+        },
+        {
+         "id": "miss",
+         "label": "Miss",
+         "kind": "choice"
+        },
+        {
+         "id": "dr",
+         "label": "Dr",
+         "kind": "choice"
+        },
+        {
+         "id": "prof",
+         "label": "Prof",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "first-name-free-text-box",
+       "label": "First name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "See below"
+       ],
+       "raw": "See below"
+      },
+      {
+       "id": "last-name-free-text-box",
+       "label": "Last name:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever author honorific option user selects* ; *whatever author first-name text user completes* ; and *whatever author last-name text user completes*"
+       ],
+       "raw": "*whatever author honorific option user selects* ; *whatever author first-name text user completes* ; and *whatever author last-name text user completes*"
+      },
+      {
+       "id": "title",
+       "label": "Title",
+       "multi": false,
+       "options": [
+        {
+         "id": "psychologist",
+         "label": "Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "general-psychologist",
+         "label": "General Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "clinical-psychologist",
+         "label": "Clinical Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "clinical-neuropsychologist",
+         "label": "Clinical Neuropsychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "forensic-psychologist",
+         "label": "Forensic Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "counselling-psychologist",
+         "label": "Counselling Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "organisational-psychologist",
+         "label": "Organisational Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "health-psychologist",
+         "label": "Health Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "educational-and-development-psychologist",
+         "label": "Educational and Development Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "community-psychologist",
+         "label": "Community Psychologist",
+         "kind": "choice"
+        },
+        {
+         "id": "if-registrar-status-is-selected-then-registrar-should-be-added-to-the-end-of-the-dtle",
+         "label": "If registrar status is selected then \"Registrar\" should be added to the end of the Dtle",
+         "kind": "choice"
+        }
+       ],
+       "variants": [
+        "*whatever title option user selects*; *add Registrar if selected*"
+       ],
+       "raw": "*whatever title option user selects*; *add Registrar if selected*"
+      },
+      {
+       "id": "organisation-free-text-box",
+       "label": "Organisation:  free text box",
+       "multi": false,
+       "options": [
+        {
+         "id": "custom",
+         "label": "Custom\u2026",
+         "kind": "text"
+        }
+       ],
+       "variants": [
+        "*whatever organisation user completes*"
+       ],
+       "raw": "*whatever organisation user completes*"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
