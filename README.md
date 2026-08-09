@@ -69,6 +69,12 @@ the MSE **Speech** item) are transcribed explicitly in `engine/overrides.ts`.
 
 ## Running it
 
+Live: **https://smartaleex.github.io/noted-it/** — deployed from `main` by
+`.github/workflows/deploy.yml`. It's a static build with no backend, so the
+"nothing leaves the device" guarantee holds when hosted.
+
+Locally:
+
 ```bash
 npm install
 npm run dev
